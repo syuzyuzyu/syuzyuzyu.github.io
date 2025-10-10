@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宮城県の遺産相続・遺言書作成なら - 仙台行政書士鈴木事務所</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", "Yu Mincho", "Hiragino Mincho ProN", "MS Mincho", serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: white;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            color: #333;
+            /* padding: 1rem 0; */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #003c6f;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.25em 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #3f3f3f;
+            letter-spacing: 0.12em;
+            /* font-family: Verdana, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; */
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: #3f3f3f;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .nav a:hover {
+            background: #f8f9fa;
+            color: #003c6f;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: white;
+            color: #333;
+            text-align: center;
+            /* padding: 4rem 2rem; */
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -25%;
+            width: 150%;
+            height: 200%;
+            background: #b4a273;
+            opacity: 0.14;
+            border-radius: 50% / 80% 20% 80% 20%;
+            transform: rotate(-15deg);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+            height: 700px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 1200px;
+            height: 650px;
+            background: #e9ecef;
+            border-radius: 5px;
+            margin: 2rem auto;
+            transition: all 0.3s ease;
+            /* background-image: url('33312042_m.jpg'); */
+            position: absolute;
+        }
+
+        .hero-caption {
+            position: absolute;
+            right: 2em;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            top: 4em;
+        }
+
+        .hero-topic {
+            color: #3f3f3f;
+            background-color: #fff;
+            letter-spacing: 0.25em;
+            text-align: start;
+            padding-top: 2em;
+            height: 12em;
+        }
+
+        .hero-message {
+            letter-spacing: 0.25em;
+
+        }
+
+        .hero-message span {
+            color: #3f3f3f;
+            background-color: #fff;
+            text-align: start;
+            margin-right: 1em;
+            display: block;
+            padding-top: 1em;
+        }
+
+        .hero-image:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #003c6f;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .cta-button {
+            background: #DBB364;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-family: inherit;
+        }
+
+        .cta-button:hover {
+            background: #ECE7B8;
+            transform: translateY(-2px);
+        }
+
+        /* Concerns Section */
+        .concerns {
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .concerns::before {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            right: -15%;
+            width: 100%;
+            height: 120%;
+            background: #e8e3d3;
+            opacity: 0.3;
+            border-radius: 60% 40% 60% 40%;
+            transform: rotate(10deg);
+            z-index: 0;
+        }
+
+        .concerns .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #003c6f;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1rem;
+        }
+
+        .concerns-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .concern-item {
+            background: white;
+            padding: 1.5rem;
+            border-left: 4px solid #DBB364;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 0.95rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .concern-item::before {
+            content: '💭';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.2rem;
+            opacity: 0.3;
+        }
+
+        .concern-item:hover {
+            transform: translateX(10px);
+        }
+
+        /* Features Section - 8つの特徴 */
+        .features {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(44, 90, 160, 0.1), transparent);
+            transform: rotate(-45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+            transform: rotate(-45deg) translate(50%, 50%);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(44, 90, 160, 0.15);
+            border-color: #003c6f;
+        }
+
+        .feature-number {
+            width: 40px;
+            height: 40px;
+            background: #003c6f;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #003c6f;
+            font-weight: bold;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Profile Section */
+        .profile {
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile::after {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: -20%;
+            width: 80%;
+            height: 140%;
+            background: #d4c5a9;
+            opacity: 0.2;
+            border-radius: 70% 30% 70% 30%;
+            transform: rotate(-20deg);
+            z-index: 0;
+        }
+
+        .profile .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+            align-items: start;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 250px;
+            background: #e9ecef;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-details h3 {
+            font-size: 1.5rem;
+            color: #003c6f;
+            margin-bottom: 0.75rem;
+            font-weight: bold;
+        }
+
+        .profile-text {
+            color: #666;
+            line-height: 1.8;
+            /* margin-bottom: 2rem; */
+        }
+
+        .credentials {
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #003c6f;
+        }
+
+        .credentials h4 {
+            color: #003c6f;
+            /* margin-bottom: 1rem; */
+            font-weight: bold;
+        }
+
+        .credentials ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .credentials li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #666;
+        }
+
+        .credentials li:last-child {
+            border-bottom: none;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 2rem;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services::before {
+            content: '';
+            position: absolute;
+            top: -25%;
+            right: -10%;
+            width: 90%;
+            height: 150%;
+            background: #f0f4f8;
+            border-radius: 45% 55% 45% 55%;
+            transform: rotate(25deg);
+            z-index: 0;
+        }
+
+        .services .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-item {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .service-item:hover {
+            border-color: #003c6f;
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .service-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #003c6f;
+            font-weight: bold;
+        }
+
+        .service-item p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .process::after {
+            content: '';
+            position: absolute;
+            bottom: -40%;
+            left: -25%;
+            width: 120%;
+            height: 180%;
+            background: #e1d7c6;
+            opacity: 0.25;
+            border-radius: 40% 60% 40% 60%;
+            transform: rotate(-30deg);
+            z-index: 0;
+        }
+
+        .process .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover::before {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+        }
+
+        .process-number {
+            width: 50px;
+            height: 50px;
+            background: #DBB364;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .process-step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #003c6f;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 2rem;
+            background: #003c6f;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-item:hover::before {
+            opacity: 1;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Advanced Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Animation Classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .animate-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .animate-scale {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .animate-delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .animate-delay-2 {
+            transition-delay: 0.2s;
+        }
+
+        .animate-delay-3 {
+            transition-delay: 0.3s;
+        }
+
+        .animate-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* Parallax Effects */
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Enhanced Hover Effects */
+        .enhanced-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .enhanced-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Floating Elements */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reveal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+            transition: left 0.8s;
+        }
+
+        .reveal.visible::before {
+            left: 100%;
+        }
+
+        /* Staggered Animation */
+        .stagger-item {
+            /* opacity: 0; */
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stagger-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Progress Bar */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #003c6f, #DBB364);
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        /* Section Transitions */
+        .section-transition {
+            position: relative;
+        }
+
+        .section-transition::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #003c6f, transparent);
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .section-transition.visible::before {
+            opacity: 1;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                /* gap: 1rem; */
+            }
+
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .nav a {
+                padding: 0;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .profile-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin: 0 auto;
+            }
+
+            .hero-topic {
+                font-size: 1em;
+            }
+
+            .hero-message span {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .concerns-list,
+            .features-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        .concern-item p {
+            color: #3f3f3f;
+            /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); */
+            white-space: nowrap;
+            /* max-width: 400px; */
+            font-size: 1.5em;
+        }
+
+        .concern-item:nth-child(1) {
+            top: 20px;
+            left: 50px;
+            transform: rotate(-5deg);
+            font-size: 0.8em;
+        }
+
+        .concern-item:nth-child(2) {
+            top: 80px;
+            right: 100px;
+            transform: rotate(3deg);
+        }
+
+        .concern-item:nth-child(3) {
+            top: 150px;
+            left: 200px;
+            transform: rotate(-2deg);
+        }
+
+        .concern-item:nth-child(4) {
+            top: 220px;
+            right: 50px;
+            transform: rotate(4deg);
+            font-size: 0.7em;
+        }
+
+        .concern-item:nth-child(5) {
+            top: 280px;
+            left: 100px;
+            transform: rotate(-3deg);
+        }
+
+        .concern-item:nth-child(6) {
+            top: 340px;
+            right: 150px;
+            transform: rotate(2deg);
+        }
+
+        .concern-item:hover {
+            transform: scale(1.1);
+        }
+
+        .concerns-list {
+            position: relative;
+            /* margin-top: 5rem; */
+            padding: 3rem;
+            min-height: 400px;
+        }
+
+        .concern-item {
+            position: absolute;
+            background: transparent;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            /* opacity: 0; */
+        }
+
+        /* スライドの共通スタイル */
+        .hero-slide.active {
+            opacity: 1;
+            transition: opacity 1s ease;
+        }
+
+        .hero-slide {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        /* .hero-image,
+        .slide-content {
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        } */
+
+        /* 表示中のスライド */
+        /* .hero-image.active,
+        .slide-content.active {
+            opacity: 1;
+            position: relative;
+        } */
+
+        /* .hero-image,
+        .hero-topic,
+        .hero-message {
+            transition: opacity 0.8s ease;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="" style="
+    background-color: #003c6f;height: 1.5em;color: #fff;">
+            <h1 style="font-size: 0.8em;font-weight: lighter;">宮城県仙台市の遺産相続・遺言書作成なら</h1>
+        </div>
+        <div class="header-container">
+            <div class="logo">仙台行政書士鈴木事務所</div>
+            <nav class="nav">
+                <a href="#services">サービス</a>
+                <a href="#contact">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-slide active">
+                <div class="hero-image" style="background-image: url('33312042_m.jpg');"></div>
+                <div class="hero-caption">
+                    <h2 class="hero-topic">死後事務委任</h2>
+                    <p class="hero-message">
+                        <span>自分の死後に発生する葬儀の手配や</span>
+                        <span>公共料金の解約、遺品整理、役所への手続きなど、</span>
+                        <span>様々な事務処理を信頼できる第三者（受任者）に生前に依頼しておくこと。</span>
+                        <span>あなたの思いを引き継ぐ、死後事務委任。</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('33203817_m.jpg');"></div>
+                <div class="hero-caption">
+                    <h2 class="hero-topic">遺言・相続</h2>
+                    <p class="hero-message">
+                        <span>遺言、自分が亡くなった後の自身の財産を誰にどのように分配するか、その意思を書面に残すこと。</span>
+                        <span>相続、亡くなった人の財産などを残された家族などが引き継ぐこと。</span>
+                        <span>お客様の人生の終章を</span>
+                        <span>大切な家族への想いを残し繋げる、遺言・相続。</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('3553683_m.jpg');"></div>
+                <div class="hero-caption">
+                    <h2 class="hero-topic">任意後見</h2>
+                    <p class="hero-message">
+                        <span>自身の認知症などで判断能力が低下した時に備えて、</span>
+                        <span>自分で選んだ人に自身が望む支援内容について依頼する契約。</span>
+                        <span>未来に備える</span>
+                        <span>生き切る、任意後見。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Concerns Section -->
+    <section id="concerns" class="concerns section-transition">
+        <div class="container">
+            <h2 class="section-title animate-scale">こんなお悩みありませんか？</h2>
+            <p class="section-subtitle animate-on-scroll animate-delay-1">遺産相続・遺言書作成でお困りの方へ</p>
+
+            <div class="concerns-list">
+                <div class="concern-item stagger-item">
+                    <p>「相続手続きが複雑で何から始めればいいかわからない」</p>
+                </div>
+                <div class="concern-item stagger-item">
+                    <p>「相続人が多くて話し合いがまとまらない」</p>
+                </div>
+                <div class="concern-item stagger-item">
+                    <p>「遺言書を作りたいけど、どう書けばいいのかわからない」</p>
+                </div>
+                <div class="concern-item stagger-item">
+                    <p>「専門家に頼んだのに自分でやることが多くて大変」</p>
+                </div>
+                <div class="concern-item stagger-item">
+                    <p>「平日は仕事で相談に行く時間がない」</p>
+                </div>
+                <div class="concern-item stagger-item">
+                    <p>「費用がどのくらいかかるのか心配」</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section-transition">
+        <div class="container">
+            <h2 class="section-title animate-left">当事務所6つの特徴</h2>
+            <p class="section-subtitle animate-right animate-delay-1">お客様に選ばれる理由</p>
+
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll animate-delay-1 enhanced-hover reveal floating">
+                    <div class="feature-number">1</div>
+                    <h3>初回相談無料</h3>
+                    <p>まずはお気軽にご相談ください。初回相談は完全無料で承っております。お悩みをお聞かせいただき、最適な解決策をご提案いたします。</p>
+                </div>
+                <div class="feature-card animate-on-scroll animate-delay-2 enhanced-hover reveal">
+                    <div class="feature-number">2</div>
+                    <h3>トータルサポート</h3>
+                    <p>「専門家に依頼したのに、自分でやることが多くて大変だった……。」ということが無いように、遺産相続に関する様々な手続きにトータルで対応いたします。</p>
+                </div>
+                <div class="feature-card animate-on-scroll animate-delay-3 enhanced-hover reveal floating">
+                    <div class="feature-number">3</div>
+                    <h3>お客様の負担を最小限に</h3>
+                    <p>お客様が行う手続きは極力代行します。お客様が実施するのは主に「印鑑証明の取得」「ヒアリング対応」「相続人同士での遺産分割協議」「書類への署名と押印」です。</p>
+                </div>
+                <div class="feature-card animate-on-scroll animate-delay-4 enhanced-hover reveal">
+                    <div class="feature-number">4</div>
+                    <h3>訪問面談対応</h3>
+                    <p>お客様のご都合に合わせて訪問面談も承っております。お忙しい方やお体の不自由な方も安心してご相談いただけます。</p>
+                </div>
+                <div class="feature-card animate-on-scroll animate-delay-1 enhanced-hover reveal floating">
+                    <div class="feature-number">5</div>
+                    <h3>土日祝日対応</h3>
+                    <p>平日はお仕事でお忙しい方のために、土日祝日のご相談も承っております。お客様のご都合に合わせて柔軟に対応いたします。</p>
+                </div>
+                <div class="feature-card animate-on-scroll animate-delay-2 enhanced-hover reveal">
+                    <div class="feature-number">6</div>
+                    <h3>明確な料金体系</h3>
+                    <p>初回面談時に概算の費用をご提示いたします。お客様に安心してご依頼いただけるよう、透明性の高い料金設定を心がけております。</p>
+                </div>
+                <!-- <div class="feature-card animate-on-scroll animate-delay-3 enhanced-hover reveal floating">
+                    <div class="feature-number">7</div>
+                    <h3>豊富な実績</h3>
+                    <p>これまで数多くの相続手続きを手がけ、お客様から高い評価をいただいております。経験豊富な行政書士が責任を持って対応いたします。</p>
+                </div>
+                <div class="feature-card animate-on-scroll animate-delay-4 enhanced-hover reveal">
+                    <div class="feature-number">8</div>
+                    <h3>親身なサポート</h3>
+                    <p>お客様お一人お一人の状況に合わせて、親身になってサポートいたします。些細な疑問や不安もお気軽にご相談ください。</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">行政書士プロフィール</h2>
+            <p class="section-subtitle animate-on-scroll">経験豊富な専門家がお客様をサポート</p>
+
+            <div class="profile-content animate-on-scroll">
+                <div class="profile-image"><img loading="lazy" class="img" src="./No1.png" style="
+    width: 200px;
+    height: 250px;
+"></div>
+                <div class="profile-details">
+                    <h3>行政書士 鈴木 健二</h3>
+                    <div class="profile-text">
+                        <p>宮城県仙台市出身。お客様の立場に立ち、わかりやすく丁寧な説明を心がけ、安心してお任せいただけるよう努めております。
+                        </p>
+
+                        <!-- <p>お客様の立場に立ち、わかりやすく丁寧な説明を心がけ、安心してお任せいただけるよう努めております。</p> -->
+
+                        <!-- <p>「お客様の負担を最小限に」をモットーに、複雑な相続手続きをトータルでサポートし、お客様に喜んでいただけることが私の一番の喜びです。</p> -->
+                    </div>
+
+                    <div class="credentials">
+                        <h4>資格・所属</h4>
+                        <ul>
+                            <li>行政書士（宮城県行政書士会所属）</li>
+                            <!-- <li>相続診断士</li>
+                            <li>終活カウンセラー</li> -->
+                            <li>宮城県行政書士会　会員</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">遺産相続・遺言サービス一覧</h2>
+            <p class="section-subtitle animate-on-scroll">幅広い相続・遺言業務に対応</p>
+
+            <div class="services-grid">
+                <div class="service-item animate-on-scroll">
+                    <h3>遺産分割協議書作成</h3>
+                    <p>相続人全員の合意内容を正確に文書化し、法的に有効な遺産分割協議書を作成いたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>遺言書作成サポート</h3>
+                    <p>公正証書遺言・自筆証書遺言の作成支援を行い、お客様の意思を確実に実現できる遺言書を作成いたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>相続手続き代行</h3>
+                    <p>各種書類の取得・作成から提出まで、相続に関する煩雑な手続きを代行いたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>相続人調査</h3>
+                    <p>戸籍収集により相続人を確定し、相続関係説明図を作成いたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>相続財産調査</h3>
+                    <p>被相続人の財産を調査し、財産目録を作成いたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>遺言執行者業務</h3>
+                    <p>遺言執行者として、遺言の内容を確実に実行いたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>生前贈与手続き</h3>
+                    <p>生前贈与に関する契約書作成や手続きをサポートいたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>家族信託サポート</h3>
+                    <p>家族信託契約書の作成や手続きをお手伝いいたします。</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 40px;">
+            <h2 class="section-title animate-on-scroll">任意後見・死後事務委任サービス</h2>
+            <p class="section-subtitle animate-on-scroll">何かあった時の備えに対応</p>
+
+            <div class="services-grid">
+                <div class="service-item animate-on-scroll">
+                    <h3>遺言書作成サポート</h3>
+                    <p>公正証書遺言・自筆証書遺言の作成支援を行い、お客様の意思を確実に実現できる遺言書を作成いたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>任意後見契約締結と受任</h3>
+                    <p>認知症に備えて、任意後見契約の作成と任意後見受任者をお引き受けします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>死後事務委任契約と実行</h3>
+                    <p>ご逝去後の葬送等手続きのための契約と実行をお引き受けいたします。</p>
+                </div>
+                <div class="service-item animate-on-scroll">
+                    <h3>家族信託サポート</h3>
+                    <p>家族信託契約書の作成や手続きをお手伝いいたします。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">手続きの流れ</h2>
+            <p class="section-subtitle animate-on-scroll">初回相談から完了まで、安心のサポート体制</p>
+
+            <div class="process-steps">
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">1</div>
+                    <h3>初回相談（無料）</h3>
+                    <p>お悩みをお聞かせください</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">2</div>
+                    <h3>詳細ヒアリング</h3>
+                    <p>状況を詳しく確認いたします</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">3</div>
+                    <h3>お見積り・ご契約</h3>
+                    <p>費用をご提示し、ご納得いただけましたらご契約</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">4</div>
+                    <h3>書類作成・手続き</h3>
+                    <p>必要書類の作成・取得を代行</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">5</div>
+                    <h3>完了・お渡し</h3>
+                    <p>手続き完了後、書類をお渡し</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color:#fff">お問い合わせ</h2>
+            <p class="section-subtitle" style="color:#fff">初回相談無料・宮城県全域対応</p>
+
+            <div class="contact-info">
+                <!-- <div class="contact-item animate-on-scroll">
+                    <h3>📞 お電話でのご相談</h3>
+                    <p>平日 9:00〜18:00<br>
+                        土日祝日も対応可能<br>
+                        TEL: 043-XXX-XXXX</p>
+                </div>
+                <div class="contact-item animate-on-scroll">
+                    <h3>📧 メールでのご相談</h3>
+                    <p>24時間受付<br> こちらをクリックして<br>
+                        わずか2タップでお申し込み<br>
+                    </p>
+                </div> -->
+                <div class=" contact-item animate-on-scroll">
+                    <h3>🛜 web面談</h3>
+                    <p>土日祝日関わらず<br>
+                        ご都合の良い時間でご対応いたします<br>
+                    </p>
+                </div>
+                <div class="contact-item animate-on-scroll">
+                    <h3>🏠 訪問面談</h3>
+                    <p>仙台市・名取市全域対応<br>
+                        ご都合の良い場所へお伺いします<br>
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <!-- <a href="mailto:info@sample.com?subject=相談依頼&body=何も入力せずにこのままメールを送信してくださメールを送信してください。受信確認後折り返しのメールを送信いたします。"
+                    style="text-decoration: none;color: inherit;" class="cta-button"> -->
+                <a id="emailLink" href="javascript:OnLinkClick();" style="text-decoration: none;color: inherit;"
+                    class="cta-button">
+                    今すぐ無料相談を申し込む</a>
+            </div>
+            <p class="section-subtitle" style="color:#fff;font-size:0.8em;margin-top: 0.5em;">
+                「上記ボタン」と「メール送信」の２タップのみでお申し込み</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 仙台行政書士鈴木事務所. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animation class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 15px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Interactive hover effects
+        document.querySelectorAll('.feature-card, .service-item').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+        document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right, .animate-scale').forEach(el => {
+            observer.observe(el);
+        });
+
+
+
+        const slides = document.querySelectorAll('.hero-slide');
+        let current = 0;
+
+        function showNextSlide() {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 5000);
+
+        function OnLinkClick() {
+            // エンティティ化された文字コード（例: "example@domain.com"）
+            const encoded = [
+                "&#x6d;", "&#x61;", "&#x69;", "&#x6c;", "&#x74;", "&#x6f;", "&#x3a;", "&#x73;", "&#x75;", "&#x7a;", "&#x75;", "&#x6b;", "&#x69;", "&#x2d;", "&#x6b;", "&#x65;", "&#x6e;", "&#x6a;", "&#x69;", "&#x40;", "&#x67;", "&#x79;", "&#x6f;", "&#x75;", "&#x73;", "&#x65;", "&#x69;", "&#x64;", "&#x65;", "&#x73;", "&#x69;", "&#x67;", "&#x6e;", "&#x2e;", "&#x63;", "&#x6f;", "&#x6d;", "&#x3f;", "&#x73;", "&#x75;", "&#x62;", "&#x6a;", "&#x65;", "&#x63;", "&#x74;", "&#x3d;", "&#x76f8;", "&#x8ac7;", "&#x4f9d;", "&#x983c;", "&#x26;", "&#x62;", "&#x6f;", "&#x64;", "&#x79;", "&#x3d;", "&#x4f55;", "&#x3082;", "&#x5165;", "&#x529b;", "&#x305b;", "&#x305a;", "&#x306b;", "&#x3053;", "&#x306e;", "&#x307e;", "&#x307e;", "&#x30e1;", "&#x30fc;", "&#x30eb;", "&#x3092;", "&#x9001;", "&#x4fe1;", "&#x3057;", "&#x3066;", "&#x304f;", "&#x3060;", "&#x3055;", "&#x30e1;", "&#x30fc;", "&#x30eb;", "&#x3092;", "&#x9001;", "&#x4fe1;", "&#x3057;", "&#x3066;", "&#x304f;", "&#x3060;", "&#x3055;", "&#x3044;", "&#x3002;", "&#x53d7;", "&#x4fe1;", "&#x78ba;", "&#x8a8d;", "&#x5f8c;", "&#x6298;", "&#x308a;", "&#x8fd4;", "&#x3057;", "&#x306e;", "&#x30e1;", "&#x30fc;", "&#x30eb;", "&#x3092;", "&#x9001;", "&#x4fe1;", "&#x3044;", "&#x305f;", "&#x3057;", "&#x307e;", "&#x3059;", "&#x3002;"
+
+            ];
+
+            // エンティティをHTMLとして解釈して文字列に変換
+            const temp = document.createElement("textarea");
+            temp.innerHTML = encoded.join("");
+            const email = temp.value;
+
+            // メールリンクを設定
+            // const link = document.getElementById("emailLink");
+            // link.href = `mailto:${email}`;
+            // link.textContent = "メールで連絡";
+            location.href = `${email}`;
+        }
+
+
+    </script>
+</body>
+
+</html>
