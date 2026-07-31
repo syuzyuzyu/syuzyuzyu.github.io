@@ -4,8 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宮城県仙台市で終活・遺言・死後事務委任なら - 仙台行政書士鈴木事務所</title>
-    <link rel=”icon” href=“favicon.ico”>
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.hs-scripts.com https://js-na2.hs-scripts.com https://*.hs-scripts.com https://*.hubspot.com https://*.hubspotusercontent-na1.net https://*.hubapi.com https://*.hs-analytics.net https://*.hs-banner.com https://*.usemessages.com https://*.hscollectedforms.net https://*.google.com https://*.gstatic.com; script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' https://js.hs-scripts.com https://js-na2.hs-scripts.com https://*.hs-scripts.com https://*.hubspot.com https://*.hubspotusercontent-na1.net https://*.hubapi.com https://*.hs-analytics.net https://*.hs-banner.com https://*.usemessages.com https://*.hscollectedforms.net https://*.google.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://*.hubspot.com https://*.hubspotusercontent-na1.net https://*.hs-banner.com https://*.usemessages.com; img-src 'self' data: https: blob: https://*.hubspot.com https://*.hubspotusercontent-na1.net https://*.hubapi.com https://*.hs-banner.com https://*.usemessages.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://js.hs-scripts.com https://js-na2.hs-scripts.com https://*.hs-scripts.com https://*.hubspot.com https://*.hubspotusercontent-na1.net https://*.hubapi.com https://*.hs-analytics.net https://*.hs-banner.com https://*.usemessages.com https://*.hscollectedforms.net https://maps.googleapis.com https://*.google.com https://*.gstatic.com wss:; frame-src 'self' https://www.google.com https://maps.google.com https://*.hubspot.com https://app.hubspot.com https://*.hubspotusercontent-na1.net https://*.hs-banner.com https://*.usemessages.com https://*.hscollectedforms.net; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <title id="page-title">宮城県仙台市で終活・遺言・死後事務委任なら - 仙台行政書士鈴木事務所</title>
+    <meta name="description" id="meta-desc"
+        content="仙台市・名取市で遺言書作成、相続、死後事務委任、任意後見のご相談は仙台行政書士鈴木事務所へ。初回相談無料。おひとり様・終活のお悩みに丁寧に対応します。">
+    <meta property="og:title" id="og-title" content="仙台行政書士鈴木事務所 | 終活・遺言・相続">
+    <meta property="og:description" id="og-desc" content="仙台市・名取市で遺言書作成、相続、死後事務委任をサポート。初回無料相談受付中。">
+    <meta property="og:type" content="website">
+    <link rel="canonical" id="canonical" href="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0"
+        rel="stylesheet">
+    <script type="application/ld+json" id="schema-org">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "仙台行政書士鈴木事務所",
+      "description": "仙台市・名取市で遺言書作成、相続、死後事務委任、任意後見をサポートする行政書士事務所",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "仙台市",
+        "addressRegion": "宮城県",
+        "addressCountry": "JP"
+      },
+      "areaServed": ["仙台市", "名取市"],
+      "priceRange": "初回無料相談"
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -13,24 +42,51 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --base-color: #f9faf8;
+            --main-color: rgb(218, 200, 133);
+            --main-color-dark: #00506e;
+            --accent-color: #C64128;
+            --text-color: #3f3f3f;
+            --base-color-rgb: 249, 250, 248;
+            --main-color-rgb: 218, 200, 133;
+            --main-color-dark-rgb: 0, 80, 110;
+            --accent-color-rgb: 198, 65, 40;
+            --text-color-rgb: 63, 63, 63;
+            /* legacy alias kept so any remaining var(--sub-color) references still resolve */
+            --sub-color: var(--main-color);
+        }
+
         body {
             font-family: "Times New Roman", "Yu Mincho", "Hiragino Mincho ProN", "MS Mincho", serif;
             line-height: 1.8;
-            color: #333;
-            background-color: white;
+            color: var(--text-color);
+            background-color: var(--base-color);
             overflow-x: hidden;
         }
 
         /* Header */
         .header {
-            background: white;
-            color: #333;
-            /* padding: 1rem 0; */
+            background: rgba(var(--base-color-rgb), 0.95);
+            color: var(--text-color);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: sticky;
+            position: fixed;
             top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
-            border-bottom: 3px solid #003c6f;
+            /* border-bottom: 3px solid var(--main-color); */
+            transform: translateY(-100%);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease;
+            backdrop-filter: blur(8px);
+        }
+
+        .header.is-visible {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
         }
 
         .header-container {
@@ -45,18 +101,18 @@
         .logo {
             font-size: 1.2rem;
             font-weight: bold;
-            color: #3f3f3f;
+            color: var(--text-color);
             letter-spacing: 0.12em;
-            /* font-family: Verdana, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; */
         }
 
         .nav {
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
+            align-items: center;
         }
 
-        .nav a {
-            color: #3f3f3f;
+        .nav>a {
+            color: var(--text-color);
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -64,20 +120,83 @@
             border-radius: 5px;
         }
 
-        .nav a:hover {
-            background: #f8f9fa;
-            color: #003c6f;
+        .nav>a:hover {
+            background: var(--base-color);
+            color: var(--main-color);
+        }
+
+        /* Mode Switcher */
+        .mode-switcher {
+            display: flex;
+            gap: 0;
+            align-items: center;
+            border: 1px solid #d0d0d0;
+            border-radius: 20px;
+            padding: 2px;
+            background: #f5f5f5;
+        }
+
+        .mode-btn {
+            padding: 0.3rem 0.9rem;
+            border-radius: 18px;
+            font-size: 0.78rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            white-space: nowrap;
+            font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+        }
+
+        .mode-btn:hover {
+            color: var(--main-color);
+        }
+
+        .mode-btn.active {
+            background: var(--main-color);
+            color: var(--text-color) !important;
         }
 
         /* Hero Section */
         .hero {
             background: white;
-            color: #333;
+            color: var(--text-color);
             text-align: center;
-            /* padding: 4rem 2rem; */
             border-bottom: 1px solid #e9ecef;
             position: relative;
             overflow: hidden;
+            min-height: 80vh;
+            height: 90vh;
+            padding: 0;
+        }
+
+        .mode-toc--hero {
+            position: relative;
+            padding-top: 100vh;
+        }
+
+        .mode-toc section,
+        #message,
+        .guide-section,
+        #features,
+        #profile,
+        #services,
+        #process,
+        #contact,
+        .footer {
+            position: relative;
+            z-index: 2;
+        }
+
+        .mode-toc .hero {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            min-height: 100vh;
+            z-index: 1;
         }
 
         .hero::before {
@@ -97,25 +216,26 @@
         .hero-content {
             position: relative;
             z-index: 1;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
+            width: 100%;
+            max-width: none;
+            margin: 0;
             animation: fadeInUp 1s ease-out;
-            height: 700px;
+            height: 100vh;
+            min-height: 100vh;
         }
 
         .hero-image {
             width: 100%;
-            max-width: 1200px;
-            height: 650px;
+            max-width: none;
+            height: 100%;
             background: #e9ecef;
-            border-radius: 5px;
-            margin: 2rem auto;
+            border-radius: 0;
+            margin: 0;
             transition: all 0.3s ease;
-            /* background-image: url('33312042_m.jpg'); */
             position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
         }
 
         .hero-caption {
@@ -124,10 +244,14 @@
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
             top: 4em;
+            bottom: 2em;
+            /* max-width: min(42vw, 520px); */
+            overflow: hidden;
+            padding-bottom: 1rem;
         }
 
         .hero-topic {
-            color: #3f3f3f;
+            color: var(--text-color);
             background-color: #fff;
             letter-spacing: 0.25em;
             text-align: start;
@@ -137,11 +261,13 @@
 
         .hero-message {
             letter-spacing: 0.25em;
-
+            max-height: calc(100% - 8em);
+            overflow: hidden;
+            padding-bottom: 0.5rem;
         }
 
         .hero-message span {
-            color: #3f3f3f;
+            color: var(--text-color);
             background-color: #fff;
             text-align: start;
             margin-right: 1em;
@@ -156,19 +282,19 @@
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: #003c6f;
+            color: var(--main-color);
             font-weight: bold;
         }
 
         .hero p {
             font-size: 1.1rem;
             margin-bottom: 2rem;
-            color: #666;
+            color: var(--text-color);
         }
 
         .cta-button {
-            background: #DBB364;
-            color: white;
+            background: var(--accent-color);
+            color: white !important;
             padding: 1rem 2rem;
             border: none;
             border-radius: 5px;
@@ -182,19 +308,112 @@
         }
 
         .cta-button:hover {
-            background: #ECE7B8;
+            background: rgba(var(--accent-color-rgb), 0.8);
             transform: translateY(-2px);
         }
 
         /* Concerns Section */
         .concerns {
             padding: 4rem 2rem;
-            background: #f8f9fa;
+            background-color: var(--base-color);
             position: relative;
             overflow: hidden;
         }
 
-        .concerns::before {
+        #concerns-toc {
+            margin-top: -3rem;
+            padding-top: 7rem;
+            border-top-left-radius: 40rem 8rem;
+            border-top-right-radius: 40rem 8rem;
+            box-shadow: 0 -18px 40px rgba(var(--main-color-rgb), 0.08);
+            overflow: visible;
+        }
+
+        /* #concerns-toc::before {
+            content: '';
+            position: absolute;
+            top: -3rem;
+            left: 0;
+            right: 0;
+            height: 4rem;
+            background: var(--base-color);
+            border-bottom-left-radius: 50% 100%;
+            border-bottom-right-radius: 50% 100%;
+            z-index: 0;
+        } */
+
+
+        #concerns-toc .concerns-list {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            justify-content: space-between;
+            margin-top: 0;
+            min-height: auto;
+            padding: 1rem 0 0;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        #concerns-toc .concerns-list::-webkit-scrollbar {
+            display: none;
+        }
+
+        #concerns-toc .concern-item {
+            /* flex: 1 1 0; */
+            /* min-width: 120px; */
+            min-height: 260px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            transition: none; */
+        }
+
+        #concerns-toc .concern-item:hover {
+            transform: none;
+        }
+
+        #concerns-toc .concern-item p {
+            font-size: 0.9em;
+            line-height: 1.9;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            letter-spacing: 0.18em;
+            margin: 0;
+            white-space: normal;
+            max-height: 100%;
+            overflow: visible;
+        }
+
+        @media (max-width: 900px) {
+            #concerns-toc .concerns-list {
+                flex-wrap: wrap;
+            }
+
+            /* #concerns-toc .concern-item {
+                min-width: calc(50% - 0.5rem);
+            } */
+        }
+
+        @media (max-width: 640px) {
+            #concerns-toc .concerns-list {
+                flex-wrap: wrap;
+            }
+
+            #concerns-toc .concern-item {
+                /* min-width: 100%;
+                min-height: 220px; */
+                font-size: 0.9em;
+            }
+
+            /* #concerns-toc .concern-item p {
+                font-size: 18px;
+            } */
+        }
+
+        /* .concerns::before {　円の背景
             content: '';
             position: absolute;
             bottom: -30%;
@@ -206,7 +425,7 @@
             border-radius: 60% 40% 60% 40%;
             transform: rotate(10deg);
             z-index: 0;
-        }
+        } */
 
         .concerns .container {
             position: relative;
@@ -216,21 +435,78 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 5%;
         }
 
         .section-title {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: #003c6f;
+            color: var(--text-color);
             font-weight: bold;
         }
 
         .section-subtitle {
             text-align: center;
-            color: #666;
+            color: var(--text-color);
             margin-bottom: 3rem;
             font-size: 1rem;
+        }
+
+        .guide-section {
+            padding: 4rem 2rem 3rem;
+            background-color: rgb(255, 255, 255, 0.8);
+        }
+
+        .guide-section__card {
+            background: var(--base-color);
+            border: 1px solid #e8e2d5;
+            border-radius: 20px;
+            padding: 2.2rem 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .guide-section__eyebrow {
+            text-align: center;
+            color: var(--accent-color);
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            font-size: 0.8rem;
+            margin-bottom: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        .guide-section__intro {
+            margin: 1.5rem auto 1.2rem;
+            padding: 1rem 1.2rem;
+            border-left: 4px solid var(--accent-color);
+            background: #faf7ee;
+            color: var(--text-color);
+            line-height: 1.8;
+            font-size: 0.98rem;
+        }
+
+        .guide-section__list {
+            margin: 1.5rem 0 0 1.1rem;
+            padding-left: 1rem;
+            color: var(--text-color);
+        }
+
+        .guide-section__list li {
+            margin-bottom: 0.7rem;
+            line-height: 1.75;
+        }
+
+        .guide-section__actions {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .guide-section__note {
+            margin-top: 1.2rem;
+            color: #8a6b2e;
+            font-size: 0.92rem;
+            line-height: 1.7;
         }
 
         .concerns-list {
@@ -240,33 +516,24 @@
             margin-top: 2rem;
         }
 
-        .concern-item {
-            background: white;
+        /* .concern-item {
+            background: var(--base-color);
             padding: 1.5rem;
-            border-left: 4px solid #DBB364;
+            border-left: 4px solid var(--accent-color);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             font-size: 0.95rem;
             position: relative;
             overflow: hidden;
         }
 
-        /* .concern-item::before {
-            content: '💭';
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 1.2rem;
-            opacity: 0.3;
-        } */
-
         .concern-item:hover {
             transform: translateX(10px);
-        }
+        } */
 
-        /* Features Section - 8つの特徴 */
+        /* Features Section */
         .features {
             padding: 4rem 2rem;
-            background: white;
+            background-color: var(--base-color);
         }
 
         .features-grid {
@@ -277,7 +544,7 @@
         }
 
         .feature-card {
-            background: #f8f9fa;
+            background: var(--base-color);
             padding: 2rem;
             border-radius: 8px;
             border: 1px solid #e9ecef;
@@ -307,14 +574,14 @@
         .feature-card:hover {
             transform: translateY(-10px) scale(1.02);
             box-shadow: 0 20px 40px rgba(44, 90, 160, 0.15);
-            border-color: #003c6f;
+            border-color: var(--main-color);
         }
 
         .feature-number {
             width: 40px;
             height: 40px;
-            background: #003c6f;
-            color: white;
+            background: var(--main-color);
+            color: var(--text-color);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -326,12 +593,12 @@
         .feature-card h3 {
             font-size: 1.1rem;
             margin-bottom: 1rem;
-            color: #003c6f;
+            color: var(--main-color-dark);
             font-weight: bold;
         }
 
         .feature-card p {
-            color: #666;
+            color: var(--text-color);
             line-height: 1.7;
             font-size: 0.95rem;
         }
@@ -339,7 +606,7 @@
         /* Profile Section */
         .profile {
             padding: 4rem 2rem;
-            background: #f8f9fa;
+            background-color: var(--base-color);
             position: relative;
             overflow: hidden;
         }
@@ -384,52 +651,95 @@
         }
 
         .profile-details h3 {
-            font-size: 1.5rem;
-            color: #003c6f;
+            font-size: 1.2rem;
+            color: var(--text-color);
             margin-bottom: 0.75rem;
             font-weight: bold;
         }
 
         .profile-text {
-            color: #666;
+            color: var(--text-color);
             line-height: 1.8;
-            /* margin-bottom: 2rem; */
+            font-size: 0.9em;
         }
 
-        .credentials {
-            background: white;
-            padding: 0.5rem 1rem;
+        .office-overview {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .office-overview h4 {
+            flex: 1 1 100%;
+            color: var(--main-color);
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .office-overview__list {
+            flex: 1 1 320px;
+            min-width: 260px;
+            background: var(--base-color);
+            padding: 0.5rem 1rem 1rem;
             border-radius: 8px;
-            border-left: 4px solid #003c6f;
+            border-left: 4px solid var(--main-color);
+            margin: 1em 0 0;
         }
 
-        .credentials h4 {
-            color: #003c6f;
-            /* margin-bottom: 1rem; */
+        .office-overview__row {
+            display: flex;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.9em;
+        }
+
+        .office-overview__row:last-child {
+            border-bottom: none;
+        }
+
+        .office-overview__row dt {
+            flex: 0 0 8em;
+            color: var(--main-color-dark);
             font-weight: bold;
         }
 
-        .credentials ul {
-            list-style: none;
-            padding-left: 0;
+        .office-overview__row dd {
+            flex: 1;
+            margin: 0;
+            color: var(--text-color);
         }
 
-        .credentials li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f0f0f0;
-            color: #666;
+        .office-overview__map {
+            flex: 1 1 320px;
+            min-width: 260px;
+            margin-top: 1em;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
-        .credentials li:last-child {
-            border-bottom: none;
+        .office-overview__map iframe {
+            display: block;
         }
 
         /* Services Section */
         .services {
-            padding: 4rem 2rem;
-            background: white;
+            padding: 4rem 0;
+            background-color: var(--base-color);
             position: relative;
             overflow: hidden;
+        }
+
+        .services .container {
+            max-width: none;
+            padding: 0;
+        }
+
+        .services .section-title,
+        .services .section-subtitle {
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         .services::before {
@@ -445,6 +755,174 @@
             z-index: 0;
         }
 
+        .service-nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 2.5rem 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .service-nav-list li {
+            margin: 0;
+        }
+
+        .service-nav-item {
+            --service-overlay: rgba(var(--main-color-rgb), 0.55);
+            --service-bg: none;
+            position: relative;
+            width: 100%;
+            min-height: 160px;
+            border: 0;
+            border-radius: 0;
+            padding: 1.5rem;
+            overflow: hidden;
+            background-color: var(--main-color);
+            background-image: linear-gradient(180deg, rgba(var(--main-color-rgb), 0.25), rgba(0, 24, 51, 0.55)), var(--service-bg, none);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            box-shadow: 0 12px 30px rgba(var(--main-color-rgb), 0.12);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .service-nav-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--service-overlay);
+        }
+
+        .service-nav-item>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-nav-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 36px rgba(var(--main-color-rgb), 0.16);
+        }
+
+        .service-nav-item:focus-visible {
+            outline: 3px solid rgba(var(--accent-color-rgb), 0.85);
+            outline-offset: 3px;
+        }
+
+        .service-nav-item__icon {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin: 0;
+            background: rgba(255, 255, 255, 0.14);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            color: white;
+            font-size: 2.1rem;
+            font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .service-nav-item>span:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        .service-nav-item__title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .service-nav-item__hint {
+            margin-top: 0.25rem;
+            font-size: 0.84rem;
+            color: rgba(255, 255, 255, 0.82);
+            letter-spacing: 0.08em;
+        }
+
+        .service-modal {
+            position: fixed;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 4000;
+        }
+
+        .service-modal.is-open {
+            display: flex;
+        }
+
+        .service-modal__panel {
+            width: min(720px, 100%);
+            max-height: min(80vh, 900px);
+            overflow: auto;
+            border-radius: 24px;
+            background: var(--base-color);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.28);
+            position: relative;
+            padding: 2rem;
+        }
+
+        .service-modal__close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            border: 0;
+            background: rgba(var(--main-color-rgb), 0.08);
+            color: var(--main-color);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+
+        .service-modal__eyebrow {
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-family: "Lato", "Yu Gothic", sans-serif;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-modal__title {
+            color: var(--main-color-dark);
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .service-modal__body {
+            color: var(--text-color);
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+
+        .service-modal__body p+p {
+            margin-top: 0.85rem;
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+
         .services .container {
             position: relative;
             z-index: 1;
@@ -458,7 +936,7 @@
         }
 
         .service-item {
-            background: #f8f9fa;
+            background: var(--base-color);
             padding: 2rem;
             border-radius: 8px;
             border: 1px solid #e9ecef;
@@ -467,27 +945,376 @@
         }
 
         .service-item:hover {
-            border-color: #003c6f;
+            border-color: var(--main-color);
             transform: translateY(-5px) scale(1.02);
         }
 
         .service-item h3 {
             font-size: 1.1rem;
             margin-bottom: 1rem;
-            color: #003c6f;
+            color: var(--main-color);
             font-weight: bold;
         }
 
         .service-item p {
-            color: #666;
+            color: var(--text-color);
             font-size: 0.95rem;
             line-height: 1.7;
+        }
+
+        /* Pricing Plans */
+        .plans {
+            padding: 4rem 0;
+            background-color: var(--base-color);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .plans .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .plans::before {
+            content: '';
+            position: absolute;
+            inset: auto -10% -20% auto;
+            width: 55%;
+            height: 140%;
+            background: #e8e3d3;
+            opacity: 0.25;
+            border-radius: 45% 55% 40% 60%;
+            transform: rotate(-18deg);
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .plan-card {
+            background: var(--base-color);
+            border-radius: 18px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 12px 30px rgba(var(--main-color-rgb), 0.08);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .plan-card:hover,
+        .plan-card:focus-visible {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 40px rgba(var(--main-color-rgb), 0.16);
+            outline: none;
+        }
+
+        .plan-card--guide {
+            border-top: 6px solid var(--accent-color);
+        }
+
+        .plan-card--custom {
+            border-top: 6px solid var(--main-color);
+        }
+
+        .plan-card__head {
+            padding: 2rem 1.5rem 1.2rem;
+            background: linear-gradient(135deg, rgba(var(--main-color-rgb), 0.06), rgba(var(--accent-color-rgb), 0.08));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .plan-card__icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--base-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            box-shadow: 0 6px 16px rgba(var(--main-color-rgb), 0.12);
+        }
+
+        .plan-card__icon .material-symbols-rounded {
+            font-size: 1.8rem;
+            color: var(--main-color);
+        }
+
+        .plan-card__label {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            font-family: "Lato", "Yu Gothic", sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-card__title {
+            color: var(--main-color-dark);
+            font-size: 1.35rem;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        .plan-card__body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .plan-card__lead {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .plan-card__list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem;
+            text-align: left;
+        }
+
+        .plan-card__list li {
+            position: relative;
+            padding-left: 1.6rem;
+            margin-bottom: 0.7rem;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .plan-card__list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .plan-card__price {
+            margin-top: auto;
+            padding-top: 1.25rem;
+            border-top: 1px solid #eef2f6;
+            color: var(--main-color-dark);
+            line-height: 1.4;
+        }
+
+        .plan-card__price-amount {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        .plan-card__price small {
+            display: block;
+            color: var(--text-color);
+            font-weight: normal;
+            font-size: 0.8rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .plan-card__cta {
+            display: inline-block;
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border-radius: 999px;
+            background: var(--main-color);
+            color: var(--text-color);
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .plan-card--guide .plan-card__cta {
+            background: var(--accent-color);
+            color: var(--base-color);
+        }
+
+        .plan-card:hover .plan-card__cta {
+            opacity: 0.9;
+        }
+
+        .plan-diagnostic {
+            max-width: 720px;
+            margin: 2rem auto 0;
+            padding: 1.5rem;
+            background: var(--base-color);
+            border: 1px solid #e9ecef;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(var(--main-color-rgb), 0.08);
+            text-align: left;
+        }
+
+        .plan-diagnostic__heading {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--main-color-dark);
+            margin-bottom: 1.25rem;
+            text-align: center;
+        }
+
+        .plan-diagnostic__q {
+            margin-bottom: 1.25rem;
+        }
+
+        .plan-diagnostic__q-label {
+            display: block;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 0.6rem;
+            font-size: 0.95rem;
+        }
+
+        .plan-diagnostic__options {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .plan-diagnostic__option {
+            padding: 0.5rem 1.2rem;
+            border-radius: 999px;
+            border: 1px solid var(--main-color);
+            background: #fff;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .plan-diagnostic__option.is-selected {
+            background: var(--main-color);
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        .plan-diagnostic__submit {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .plan-diagnostic__result {
+            display: none;
+            margin-top: 1.25rem;
+            padding: 1.25rem;
+            background: rgba(var(--main-color-rgb), 0.1);
+            border-left: 4px solid var(--main-color-dark);
+            border-radius: 8px;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .plan-diagnostic__result.is-visible {
+            display: block;
+        }
+
+        .plan-diagnostic__arrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(var(--main-color-dark-rgb), 0.2);
+            color: var(--main-color-dark);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .plan-diagnostic__arrow-icon {
+            font-size: 1.8rem;
+            line-height: 1;
+            animation: plan-diagnostic-bounce 1.4s ease-in-out infinite;
+        }
+
+        @keyframes plan-diagnostic-bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(6px);
+            }
+        }
+
+        .is-hidden {
+            display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            .plans {
+                padding: 3rem 0;
+            }
+
+            .plans-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .plan-card__title {
+                font-size: 1.2rem;
+            }
+
+            .plan-diagnostic {
+                padding: 1.25rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-nav-item {
+                padding: 1rem;
+                min-height: 140px;
+                gap: 0.5rem;
+            }
+
+            .services .section-title,
+            .services .section-subtitle {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .service-nav-item__icon {
+                width: 64px;
+                height: 64px;
+                font-size: 1.6rem;
+            }
+
+            .service-nav-item__title {
+                font-size: 1rem;
+            }
+
+            .service-modal__panel {
+                padding: 1.4rem;
+            }
+
+            .service-modal__title {
+                font-size: 1.35rem;
+                padding-right: 2rem;
+            }
         }
 
         /* Process Section */
         .process {
             padding: 4rem 2rem;
-            background: #f8f9fa;
+            background-color: var(--base-color);
             position: relative;
             overflow: hidden;
         }
@@ -512,20 +1339,24 @@
         }
 
         .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
             margin-top: 3rem;
         }
 
         .process-step {
-            text-align: center;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            text-align: left;
+            background: var(--base-color);
+            padding: 1.4rem 1.6rem;
+            border-radius: 12px;
             border: 1px solid #e9ecef;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
         }
 
         .process-step::before {
@@ -550,32 +1381,38 @@
         }
 
         .process-number {
-            width: 50px;
-            height: 50px;
-            background: #DBB364;
+            width: 48px;
+            height: 48px;
+            background: var(--main-color);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.3rem;
+            flex-shrink: 0;
+            font-size: 1.2rem;
             font-weight: bold;
         }
 
         .process-step h3 {
             font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            color: #003c6f;
+            margin-bottom: 0.25rem;
+            color: var(--text-color);
             font-weight: bold;
+        }
+
+        .process-step p {
+            margin: 0;
+            color: var(--text-color);
         }
 
         /* Contact Section */
         .contact {
             padding: 4rem 2rem;
-            background: #003c6f;
-            color: white;
+            background-color: var(--main-color-dark);
+            color: var(--text-color);
             text-align: center;
+            font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
         }
 
         .contact-info {
@@ -586,11 +1423,11 @@
         }
 
         .contact-item {
-            background: rgba(255, 255, 255, 0.15);
+            background-color: var(--base-color);
             padding: 2rem;
-            border-radius: 8px;
+            border-radius: 4px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 4px solid var(--main-color);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -622,12 +1459,217 @@
             font-weight: bold;
         }
 
-        /* Footer */
+        /* ===== Rich Footer ===== */
         .footer {
-            background: #1a1a1a;
+            background: #001f3f;
             color: white;
+        }
+
+        .footer__top {
+            background: var(--text-color);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer__top-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer__office-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            color: white;
+        }
+
+        .footer__tagline {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.75);
+            letter-spacing: 0.05em;
+        }
+
+        .footer__main {
+            padding: 3rem 2rem;
+        }
+
+        .footer__grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .footer-col__title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Lato", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+            margin-bottom: 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid rgba(var(--accent-color-rgb), 0.3);
+        }
+
+        .footer-col__info-block {
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-col__info-label {
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            margin-bottom: 0.2rem;
+        }
+
+        .footer-col__info-value {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.7;
+        }
+
+        .footer-col__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col__list li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .footer-col__list li:last-child {
+            border-bottom: none;
+        }
+
+        .footer-col__list a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.45rem 0;
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            transition: color 0.2s ease, padding-left 0.2s ease;
+        }
+
+        .footer-col__list a::before {
+            content: '›';
+            color: var(--main-color);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .footer-col__list a:hover {
+            color: white;
+            padding-left: 4px;
+        }
+
+        .footer-col__list--category {
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-col__category-label {
+            font-size: 0.75rem;
+            color: rgba(var(--main-color-rgb), 0.8);
+            letter-spacing: 0.1em;
+            font-family: sans-serif;
+            margin-bottom: 0.3rem;
+        }
+
+        .footer__area {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer__area-title {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer__area-text {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .footer__licenses {
+            max-width: 1200px;
+            margin: 1.5rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer__licenses-title {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            margin-bottom: 0.6rem;
+        }
+
+        .footer__licenses-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem 1.2rem;
+        }
+
+        .footer__licenses-grid span {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer__licenses-grid span::before {
+            content: '・';
+            color: var(--main-color);
+        }
+
+        .footer__bottom {
+            background: #001228;
+            padding: 1rem 2rem;
             text-align: center;
-            padding: 2rem;
+        }
+
+        .footer__bottom p {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.45);
+            letter-spacing: 0.05em;
+        }
+
+        /* Footer Responsive */
+        @media (max-width: 900px) {
+            .footer__grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .footer__grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .footer__top-inner {
+                flex-direction: column;
+                text-align: center;
+            }
         }
 
         /* Advanced Animations */
@@ -752,15 +1794,6 @@
             transition-delay: 0.4s;
         }
 
-        /* Parallax Effects */
-        .parallax-bg {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
-
         /* Enhanced Hover Effects */
         .enhanced-hover {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -810,8 +1843,7 @@
         }
 
         /* Staggered Animation */
-        .stagger-item {
-            /* opacity: 0; */
+        /* .stagger-item {
             transform: translateY(30px);
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -819,7 +1851,7 @@
         .stagger-item.visible {
             opacity: 1;
             transform: translateY(0);
-        }
+        } */
 
         /* Progress Bar */
         .scroll-progress {
@@ -828,7 +1860,7 @@
             left: 0;
             width: 0%;
             height: 3px;
-            background: linear-gradient(90deg, #003c6f, #DBB364);
+            background: linear-gradient(90deg, var(--main-color), var(--accent-color));
             z-index: 9999;
             transition: width 0.1s ease;
         }
@@ -838,84 +1870,30 @@
             position: relative;
         }
 
-        .section-transition::before {
+        /* .section-transition::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #003c6f, transparent);
+            background: linear-gradient(90deg, transparent, var(--main-color), transparent);
             opacity: 0;
             transition: opacity 0.8s ease;
-        }
+        } */
 
         .section-transition.visible::before {
             opacity: 1;
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                /* gap: 1rem; */
-            }
-
-            .nav {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-            }
-
-            .nav a {
-                padding: 0;
-                font-size: 0.8em;
-            }
-
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .profile-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .profile-image {
-                margin: 0 auto;
-            }
-
-            .hero-topic {
-                font-size: 0.8em;
-            }
-
-            .hero-message span {
-                font-size: 0.7em;
-            }
-        }
-
-        @media (max-width: 480px) {
-
-            .concerns-list,
-            .features-grid,
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
+        /* Concerns layout */
         .concern-item p {
-            color: #3f3f3f;
-            /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); */
+            color: var(--text-color);
             white-space: nowrap;
-            /* max-width: 400px; */
             font-size: 1.5em;
         }
 
+        /* 
         .concern-item:nth-child(1) {
             top: 20px;
             left: 50px;
@@ -952,20 +1930,19 @@
             top: 340px;
             right: 150px;
             transform: rotate(2deg);
-        }
+        } */
 
-        .concern-item:hover {
+        /* .concern-item:hover {
             transform: scale(1.1);
-        }
+        } */
 
-        .concerns-list {
+        /* .concerns-list {
             position: relative;
-            /* margin-top: 5rem; */
             padding: 3rem;
             min-height: 400px;
-        }
+        } */
 
-        .concern-item {
+        /* .concern-item {
             position: absolute;
             background: transparent;
             padding: 0;
@@ -973,197 +1950,1059 @@
             box-shadow: none;
             font-size: 0.95rem;
             transition: all 0.3s ease;
-            /* opacity: 0; */
-        }
+        } */
 
-        /* スライドの共通スタイル */
+        /* Slide styles */
         .hero-slide.active {
             opacity: 1;
+            pointer-events: auto;
             transition: opacity 1s ease;
         }
 
         .hero-slide {
+            position: absolute;
+            inset: 0;
             opacity: 0;
+            pointer-events: none;
             transition: opacity 1s ease;
         }
 
-        /* .hero-image,
-        .slide-content {
-            opacity: 0;
-            transition: opacity 0.8s ease;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        } */
+        /* ===== toB Redesign Styles ===== */
 
-        /* 表示中のスライド */
-        /* .hero-image.active,
-        .slide-content.active {
-            opacity: 1;
+        /* Section headings: English label + Japanese title */
+        .tob-section-label {
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            letter-spacing: 0.3em;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Lato", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .tob-section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--text-color);
+            font-weight: bold;
+            margin-bottom: 3rem;
+        }
+
+        /* toB Hero - Full width static */
+        .tob-hero {
             position: relative;
-        } */
+            height: 80vh;
+            min-height: 500px;
+            max-height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
 
-        /* .hero-image,
-        .hero-topic,
-        .hero-message {
-            transition: opacity 0.8s ease;
-        } */
+        .tob-hero__bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .tob-hero__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(var(--main-color-dark-rgb), 0.55) 0%, rgba(var(--main-color-dark-rgb), 0.85) 100%);
+            z-index: 1;
+        }
+
+        .tob-hero__content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .tob-hero__title {
+            font-size: 2.8rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tob-hero__subtitle {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 2;
+            margin-bottom: 2.5rem;
+        }
+
+        .tob-hero__cta {
+            font-size: 1.1rem;
+        }
+
+        .tob-hero__scroll {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            font-family: "Lato", sans-serif;
+            text-align: center;
+        }
+
+        .tob-hero__scroll::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.5);
+            margin: 0.5rem auto 0;
+            animation: scrollBounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes scrollBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: translateY(10px);
+                opacity: 1;
+            }
+        }
+
+        /* toB ABOUT US */
+        .tob-about {
+            padding: 5rem 2rem;
+            background: var(--base-color);
+        }
+
+        .tob-about__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .tob-about__image {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tob-about__image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .tob-about__text h3 {
+            font-size: 1.3rem;
+            color: var(--main-color-dark);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .worry-title {
+            font-size: 0.9em;
+            line-height: 1.9;
+            letter-spacing: 0.18em;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            color: var(--main-color-dark);
+            font-weight: bold;
+            text-align: left;
+            margin: -64px auto 24px;
+        }
+
+        .tob-about__text p {
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        /* toB SERVICE */
+        .tob-services {
+            padding: 5rem 2rem;
+            background: var(--base-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tob-services .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .tob-services__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .tob-service-card {
+            background: var(--base-color);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .tob-service-card:hover {
+            border-color: var(--main-color);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(var(--main-color-rgb), 0.12);
+        }
+
+        .tob-service-card__icon {
+            width: 60px;
+            height: 60px;
+            background: var(--main-color);
+            color: var(--text-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            font-family: "Lato", sans-serif;
+        }
+
+        .tob-service-card__title {
+            font-size: 1.1rem;
+            color: var(--main-color-dark);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .tob-service-card__desc {
+            color: var(--text-color);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* toB POINT - Alternating image/text */
+        .tob-points {
+            padding: 5rem 2rem;
+            background: var(--base-color);
+        }
+
+        .tob-point {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .tob-point:last-child {
+            margin-bottom: 0;
+        }
+
+        .tob-point--reverse .tob-point__content {
+            order: -1;
+        }
+
+        .tob-point__image {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tob-point__image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .tob-point__image:hover img {
+            transform: scale(1.05);
+        }
+
+        .tob-point__number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-family: "Lato", sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .tob-point__title {
+            font-size: 1.4rem;
+            color: var(--main-color-dark);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .tob-point__desc {
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        /* toB FLOW - Vertical timeline */
+        .tob-flow {
+            padding: 5rem 2rem;
+            background: var(--base-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tob-flow .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .tob-flow__steps {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            padding-left: 25px;
+        }
+
+        .tob-flow__steps::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent-color);
+        }
+
+        .tob-flow__step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .tob-flow__step:last-child {
+            margin-bottom: 0;
+        }
+
+        .tob-flow__number {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--main-color);
+            color: var(--text-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: "Lato", sans-serif;
+            position: relative;
+            z-index: 1;
+        }
+
+        .center {
+            min-height: 500px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .message {
+            padding: 4rem 2rem;
+            background-color: var(--main-color-dark);
+        }
+
+        .segment-message {
+            font-size: 1.2em;
+            color: var(--base-color);
+            border-bottom: 1px solid var(--accent-color);
+            border-image: linear-gradient(to right, var(--accent-color), var(--main-color-dark)) 1;
+        }
+
+        .segment-message__main {
+            color: var(--main-color);
+        }
+
+        .segment-message__accent {
+            color: var(--accent-color);
+        }
+
+        .tob-flow__body {
+            flex: 1;
+            padding-top: 0.5rem;
+        }
+
+        .tob-flow__body h3 {
+            font-size: 1.1rem;
+            color: var(--main-color-dark);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .tob-flow__body p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Hide Features section for toB */
+        html[data-mode="business"] #features {
+            display: none !important;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem;
+            }
+
+            .nav>a {
+                padding: 0;
+                font-size: 0.8em;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .profile-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin: 0 auto;
+            }
+
+            .office-overview__list,
+            .office-overview__map {
+                flex: 1 1 100%;
+            }
+
+            .office-overview__row {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+
+            .office-overview__row dt {
+                flex: none;
+            }
+
+            .hero-topic {
+                font-size: 0.8em;
+            }
+
+            .hero-message span {
+                font-size: 0.7em;
+            }
+
+            .mode-switcher {
+                margin-top: 0.25rem;
+                margin-bottom: 0.25rem;
+            }
+
+            .mode-btn {
+                font-size: 0.72rem;
+                padding: 0.25rem 0.6rem;
+            }
+
+            /* toB responsive - 768px */
+            .tob-hero {
+                height: 60vh;
+                min-height: 400px;
+            }
+
+            .tob-hero__title {
+                font-size: 1.8rem;
+            }
+
+            .tob-hero__subtitle {
+                font-size: 1rem;
+            }
+
+            .tob-about__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tob-about__image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .tob-services__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tob-point,
+            .tob-point--reverse {
+                grid-template-columns: 1fr;
+            }
+
+            .tob-point--reverse .tob-point__content {
+                order: 0;
+            }
+
+            .tob-point__image img {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .concerns-list,
+            .features-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* toB responsive - 480px */
+            .tob-services__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tob-hero__title {
+                font-size: 1.5rem;
+            }
+
+            .tob-hero__subtitle {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <!-- Early mode detection to prevent flash of wrong content -->
+    <script>
+        (function () {
+            var isBiz = new URLSearchParams(location.search).get('type') === 'business';
+            if (isBiz) {
+                document.documentElement.setAttribute('data-mode', 'business');
+            }
+        })();
+    </script>
+    <style>
+        html[data-mode="business"] .mode-toc {
+            display: none !important;
+        }
+
+        html[data-mode="business"] .mode-tob {
+            display: block !important;
+        }
+    </style>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
 
     <!-- Header -->
     <header class="header">
-        <div class="" style="
-    background-color: #003c6f;height: 1.5em;color: #fff;">
+        <div id="header-banner"
+            style="background-color: var(--main-color-dark);height: 1.5em;color: var(--text-color);">
             <h1 style="font-size: 0.8em;font-weight: lighter;">仙台での遺言贈与・死後事務委任・事業承継なら</h1>
         </div>
         <div class="header-container">
-            <div class="logo">仙台行政書士鈴木事務所</div>
+            <div class="logo">
+                <img src="gyosyologo.svg" alt="仙台行政書士鈴木事務所" style="height: 1.8rem; width: auto;
+    vertical-align: -0.25em;">
+                <span style="display: inline-block; line-height: 2.5rem;">仙台行政書士鈴木事務所</span>
+            </div>
             <nav class="nav">
-                <a href="#services">サービス</a>
-                <a href="#contact">お問い合わせ</a>
+                <!-- <a href="#services">サービス</a>
+                <a href="#contact">お問い合わせ</a> -->
+                <div class="mode-switcher">
+                    <a href="/" class="mode-btn mode-btn-toc" id="btn-toc">個人のお客様</a>
+                    <a href="/?type=business" class="mode-btn mode-btn-tob" id="btn-tob">法人・事業者様</a>
+                </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ===== toC セクション（個人向け：遺言・相続・死後事務委任） ===== -->
+    <div class="mode-toc mode-toc--hero">
 
+        <!-- Hero Section (toC) -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-slide active">
+                    <div class="hero-image" style="background-image: url('2807663_m.jpg');"></div>
+                    <div class="hero-caption">
+                        <h2 class="hero-topic">相続</h2>
+                        <p class="hero-message">
+                            <span>亡くなられた方の財産を</span>
+                            <span>家族が引き継ぐこと。</span>
+                            <span>ひとりで抱えなくていい。</span>
+                            <span>寄り添い、共に乗り越える、相続。</span>
+                        </p>
+                    </div>
+                </div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-slide active">
-                <div class="hero-image" style="background-image: url('33312042_m.jpg');"></div>
-                <div class="hero-caption">
-                    <h2 class="hero-topic">死後事務委任</h2>
-                    <p class="hero-message">
-                        <span>自分の死後に発生する葬儀の手配や</span>
-                        <span>公共料金の解約、遺品整理、役所への手続きなど、</span>
-                        <span>様々な事務処理を信頼できる第三者（受任者）に生前に依頼しておくこと。</span>
-                        <span>あなたの思いを引き継ぐ、死後事務委任。</span>
-                    </p>
+                <div class="hero-slide">
+                    <div class="hero-image" style="background-image: url('33203817_m.jpg');"></div>
+                    <div class="hero-caption">
+                        <h2 class="hero-topic">遺言・贈与</h2>
+                        <p class="hero-message">
+                            <span>遺言、自分が亡くなった後の自身の財産を誰にどのように分配するか、その意思を書面に残すこと。</span>
+                            <span>贈与、生前に財産を他人に移す行為。</span>
+                            <span>お客様の人生の終章を</span>
+                            <span>大切な家族への想いを残し繋げる、遺言・贈与。</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <div class="hero-image" style="background-image: url('3553683_m.jpg');"></div>
+                    <div class="hero-caption">
+                        <h2 class="hero-topic">任意後見</h2>
+                        <p class="hero-message">
+                            <span>自身の認知症などで判断能力が低下した時に備えて、</span>
+                            <span>自分で選んだ人に自身が望む支援内容について依頼する契約。</span>
+                            <span>未来に備える</span>
+                            <span>生き切る、任意後見。</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hero-slide active">
+                    <div class="hero-image" style="background-image: url('33312042_m.jpg');"></div>
+                    <div class="hero-caption">
+                        <h2 class="hero-topic">死後事務委任</h2>
+                        <p class="hero-message">
+                            <span>自分の死後に発生する葬儀の手配や</span>
+                            <span>公共料金の解約、遺品整理、役所への手続きなど、</span>
+                            <span>様々な事務処理を信頼できる第三者（受任者）に生前に依頼しておくこと。</span>
+                            <span>あなたの思いを引き継ぐ、死後事務委任。</span>
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-slide">
-                <div class="hero-image" style="background-image: url('33203817_m.jpg');"></div>
-                <div class="hero-caption">
-                    <h2 class="hero-topic">遺言・贈与</h2>
-                    <p class="hero-message">
-                        <span>遺言、自分が亡くなった後の自身の財産を誰にどのように分配するか、その意思を書面に残すこと。</span>
-                        <span>贈与、生前に財産を他人に移す行為。</span>
-                        <span>お客様の人生の終章を</span>
-                        <span>大切な家族への想いを残し繋げる、遺言・贈与。</span>
-                    </p>
+        <!-- Concerns Section (toC) -->
+        <section id="concerns-toc" class="concerns section-transition">
+            <div class="container">
+                <h2 class="worry-title">相続で迷惑を<br />&nbsp;かけたくない人へ</h2>
+
+                <div class="concerns-list">
+                    <div class="concern-item stagger-item">
+                        <p>「相続、何から手をつければいいかわからない」</p>
+                    </div>
+                    <div class="concern-item stagger-item">
+                        <p>「役所などを何度も回る、時間も体力もない」</p>
+                    </div>
+                    <div class="concern-item stagger-item">
+                        <p>「誰に相談すればいいのかわからない」</p>
+                    </div>
+                    <div class="concern-item stagger-item">
+                        <p>「期限までに対応できない、時間がない</p>
+                    </div>
+                    <div class="concern-item stagger-item">
+                        <p>「そろそろ備えたい（お金のこと、自分のこと）」</p>
+                    </div>
+                    <div class="concern-item stagger-item">
+                        <p>「費用がどのくらいかかるのか心配」</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-slide">
-                <div class="hero-image" style="background-image: url('3553683_m.jpg');"></div>
-                <div class="hero-caption">
-                    <h2 class="hero-topic">任意後見</h2>
-                    <p class="hero-message">
-                        <span>自身の認知症などで判断能力が低下した時に備えて、</span>
-                        <span>自分で選んだ人に自身が望む支援内容について依頼する契約。</span>
-                        <span>未来に備える</span>
-                        <span>生き切る、任意後見。</span>
-                    </p>
+    </div><!-- /mode-toc (hero + concerns) -->
+
+    <!-- ===== toB セクション（法人・事業者向け：IT補助金・コンサル） ===== -->
+    <div class="mode-tob" style="display:none">
+
+        <!-- Hero Section (toB) - Full width static -->
+        <section class="tob-hero">
+            <div class="tob-hero__bg" style="background-image: url('33312042_m.jpg');"></div>
+            <div class="tob-hero__overlay"></div>
+            <div class="tob-hero__content">
+                <h1 class="tob-hero__title animate-on-scroll">IT×補助金で、<br>ビジネスを加速する</h1>
+                <p class="tob-hero__subtitle animate-on-scroll">
+                    MBA×IT×行政書士の複合知識で、<br>
+                    IT導入補助金の申請からITコンサルティングまで一貫サポート。<br>
+                    中小企業・個人事業主様のDX推進を「中の人」として伴走します。
+                </p>
+                <a href="#contact" class="cta-button tob-hero__cta animate-on-scroll">無料相談はこちら</a>
+            </div>
+            <!-- <div class="tob-hero__scroll">Scroll</div> -->
+        </section>
+
+        <!-- ABOUT US Section (toB) -->
+        <section class="tob-about section-transition">
+            <div class="container">
+                <p class="tob-section-label animate-on-scroll">ABOUT US</p>
+                <h2 class="tob-section-title animate-on-scroll">「中の人」として伴走する<br>ITコンサルタント</h2>
+                <div class="tob-about__grid">
+                    <div class="tob-about__image animate-on-scroll">
+                        <img src="33203817_m.jpg" alt="ITコンサルティング" loading="lazy">
+                    </div>
+                    <div class="tob-about__text animate-on-scroll">
+                        <h3>経営の現場を知る行政書士が、<br>IT活用を内側からサポート</h3>
+                        <p>
+                            経営学修士（MBA）を取得し、東証プライム企業の子会社運営など事業経営の現場で豊富な経験を積んできました。
+                            外部のコンサルタントではなく、「中の人」として貴社のチームに入り込み、
+                            IT戦略の立案から補助金申請、システム導入、運用定着まで一貫して伴走します。
+                        </p>
+                        <p style="margin-top:1rem;">
+                            行政書士としての法務知識と、MBA・IT実務経験を組み合わせ、
+                            中小企業・個人事業主様のビジネス成長を総合的に支援いたします。
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </div><!-- /mode-tob (hero + about us) -->
 
 
-
-    <!-- Concerns Section -->
-    <section id="concerns" class="concerns section-transition">
+    <section id="message" class="message section-transition">
         <div class="container">
-            <h2 class="section-title animate-scale">こんなお悩みありませんか？<br /><span
-                    class="section-subtitle animate-on-scroll animate-delay-1">遺言、死後事務、後継者不在でお困りの方へ</span></h2>
+            <div class="center">
+                <h2 class="segment-message"><span class="segment-message__main">相続</span>を、一緒に乗り越える。</h2>
+            </div>
+        </div>
+    </section>
 
-            <div class="concerns-list">
-                <div class="concern-item stagger-item">
-                    <p>「迷惑をかけたくない」</p>
+    <section id="guide" class="guide-section section-transition" aria-labelledby="guide-title">
+        <div class="container">
+            <div class="guide-section__card">
+                <p class="guide-section__eyebrow">まずやるべきことガイド</p>
+                <h2 class="section-title" id="guide-title">相続が発生したら、まずやるべきこと</h2>
+                <p class="section-subtitle" style="margin-bottom: 1.5rem;">ご依頼の前に、まず知っておいていただきたいことがあります</p>
+
+                <blockquote class="guide-section__intro">
+                    相続が発生したら、まずやるべき5つのこと（一般的な目安です。個別の状況により異なりますので、詳しくはチャットでご相談ください）
+                </blockquote>
+
+                <ol class="guide-section__list">
+                    <li>死亡届の提出（7日以内）</li>
+                    <li>遺言書の有無を確認する</li>
+                    <li>相続人を確認する（戸籍の収集）</li>
+                    <li>相続財産を把握する（プラスの財産・マイナスの財産の両方）</li>
+                    <li>遺産分割、相続税の申告・納付（10か月以内）</li>
+                </ol>
+
+                <div class="guide-section__actions">
+                    <a href="#contact" class="cta-button" data-action="open-chat">チャットで詳しく聞く</a>
                 </div>
-                <div class="concern-item stagger-item">
-                    <p>「財産を託したい」</p>
+                <p class="guide-section__note" style="margin-top:0.75rem;  ">
+                    チャットでのやりとりは、ゆっくりと日を跨いで何度でもやりとりでできます同じ端末・ブラウザであれば、数ヶ月程度は会話の続きからご相談いただけます（ご利用環境により異なります）。
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans (toC) -->
+    <section id="plans-toc" class="plans section-transition mode-toc">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">相続ご依頼者向けタイプ</h2>
+            <p class="section-subtitle animate-on-scroll">依頼はいりません。まずはご自身でできるやり方を提案します</p>
+
+            <div class="plan-diagnostic animate-on-scroll">
+                <p class="plan-diagnostic__heading">まずは3つの質問で、費用の目安をチェックできます</p>
+                <div class="plan-diagnostic__q">
+                    <span class="plan-diagnostic__q-label">Q1. 不動産（土地・家・マンション等）はありますか？</span>
+                    <div class="plan-diagnostic__options">
+                        <button type="button" class="plan-diagnostic__option" data-group="property"
+                            data-value="no">いいえ</button>
+                        <button type="button" class="plan-diagnostic__option" data-group="property"
+                            data-value="yes">はい</button>
+                    </div>
                 </div>
-                <div class="concern-item stagger-item">
-                    <p>「遺言書を作りたいけど、どう書けばいいのかわからない」</p>
+                <div class="plan-diagnostic__q">
+                    <span class="plan-diagnostic__q-label">Q2. 相続税は発生しそうですか？（目安：3,000万円＋600万円×法定相続人の数）</span>
+                    <div class="plan-diagnostic__options">
+                        <button type="button" class="plan-diagnostic__option" data-group="tax"
+                            data-value="none">いいえ</button>
+                        <button type="button" class="plan-diagnostic__option" data-group="tax"
+                            data-value="yes">はい</button>
+                        <button type="button" class="plan-diagnostic__option" data-group="tax"
+                            data-value="unknown">わからない</button>
+                    </div>
                 </div>
-                <div class="concern-item stagger-item">
-                    <p>「頼る人がいない」</p>
+                <div class="plan-diagnostic__q">
+                    <span class="plan-diagnostic__q-label">Q3. 預貯金・証券口座は、いくつの金融機関にありますか？</span>
+                    <div class="plan-diagnostic__options">
+                        <button type="button" class="plan-diagnostic__option" data-group="banks"
+                            data-value="le2">2社以下</button>
+                        <button type="button" class="plan-diagnostic__option" data-group="banks"
+                            data-value="3to4">3〜4社</button>
+                        <button type="button" class="plan-diagnostic__option" data-group="banks"
+                            data-value="ge5">5社以上</button>
+                    </div>
                 </div>
-                <div class="concern-item stagger-item">
-                    <p>「保証人がいない」</p>
-                </div>
-                <div class="concern-item stagger-item">
-                    <p>「費用がどのくらいかかるのか心配」</p>
+                <button type="button" class="cta-button plan-diagnostic__submit"
+                    data-action="show-estimate">目安を見る</button>
+                <div id="omakase-result" class="plan-diagnostic__result"></div>
+            </div>
+
+            <div id="plan-types" class="is-hidden">
+                <p class="section-subtitle animate-on-scroll" style="margin-top:2rem;font-size:0.9rem;">
+                    各カードをクリックすると詳しい内容をご確認いただけます</p>
+
+                <div class="plans-grid">
+                    <article class="plan-card plan-card--guide animate-on-scroll" data-plan="guide" tabindex="0"
+                        role="button" aria-haspopup="dialog">
+                        <div class="plan-card__head">
+                            <span class="plan-card__icon"><span class="material-symbols-rounded"
+                                    aria-hidden="true">forum</span></span>
+                            <span class="plan-card__label">はじめに</span>
+                            <h3 class="plan-card__title">ガイドタイプ</h3>
+                        </div>
+                        <div class="plan-card__body">
+                            <ul class="plan-card__list">
+                                <li>進め方の整理と手順のご案内</li>
+                                <li>必要書類や確認事項のアドバイス</li>
+                                <li>ご自身で動くための実務ガイド</li>
+                                <li>事前予約制のweb会議でご案内</li>
+                            </ul>
+                            <div class="plan-card__price">
+                                <span class="plan-card__price-amount">無料</span>
+                                <small>ご自身で全て実施したい方向け</small>
+                                <button type="button" class="plan-card__cta" data-action="open-chat">チャットで相談する</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="plan-card plan-card--custom animate-on-scroll" data-plan="omakase" tabindex="0"
+                        role="button" aria-haspopup="dialog">
+                        <div class="plan-card__head">
+                            <span class="plan-card__icon"><span class="material-symbols-rounded"
+                                    aria-hidden="true">handshake</span></span>
+                            <span class="plan-card__label">つぎに</span>
+                            <h3 class="plan-card__title">お任せタイプ</h3>
+                        </div>
+                        <div class="plan-card__body">
+                            <ul class="plan-card__list">
+                                <li>戸籍収集・財産調査・名義変更を一括対応</li>
+                                <li>ライト／標準／フルの3段階でご案内</li>
+                                <li>個別事情に合わせた柔軟な対応</li>
+                            </ul>
+                            <div class="plan-card__price">
+                                <span class="plan-card__price-amount" id="omakase-card-price">50万円〜80万円</span>
+                                <small>ご相談後詳細の見積もりをして確定します</small>
+                                <button type="button" class="plan-card__cta">詳細を見る</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="plan-card plan-card--custom animate-on-scroll" data-plan="custom" tabindex="0"
+                        role="button" aria-haspopup="dialog">
+                        <div class="plan-card__head">
+                            <span class="plan-card__icon"><span class="material-symbols-rounded"
+                                    aria-hidden="true">tune</span></span>
+                            <span class="plan-card__label">つぎに</span>
+                            <h3 class="plan-card__title">オーダーメイドタイプ</h3>
+                        </div>
+                        <div class="plan-card__body">
+                            <ul class="plan-card__list">
+                                <li>必要な作業だけを個別に選んで依頼</li>
+                                <li>書類作成や収集の代行</li>
+                                <li>個別事情に合わせた柔軟な対応</li>
+                            </ul>
+                            <div class="plan-card__price">
+                                <span class="plan-card__price-amount">個別お見積り</span>
+                                <small>必要な作業だけをお選びいただけます。詳しくはご相談ください</small>
+                                <button type="button" class="plan-card__cta">詳細を見る</button>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Services Section (toC) -->
+    <section id="services" class="services mode-toc">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">終活関連のサービスを提供</h2>
+            <p class="section-subtitle animate-on-scroll">現在からご逝去後まで幅広い業務に対応</p>
+
+            <ul class="service-nav-list">
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="遺言書作成"
+                        data-service-desc="公正証書遺言・自筆証書遺言の作成支援を行い、お客様の意思を確実に実現できる遺言書をサポートいたします。公正証書遺言は11万円〜（証人手配等含む総額目安15〜20万円程度）、ご夫婦同時作成は17万円〜（総額目安25〜35万円程度）が料金の目安です。"
+                        data-service-icon="description" data-service-bg="url('33312042_m.jpg')"
+                        data-service-overlay="rgba(var(--main-color-rgb), 0.58)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">description</span>
+                        <span>
+                            <h3 class="service-nav-item__title">遺言書作成</h3>
+                            <span class="service-nav-item__hint">生前の相続。財産を事前に整理する</span>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="墓じまい"
+                        data-service-desc="お墓の撤去・改葬に必要な行政手続き（改葬許可申請等）から、墓地管理者・新しい受け入れ先との調整まで、墓じまいに伴う手続きを代行いたします。料金は墓地の状況により異なるため個別お見積りとなります。"
+                        data-service-icon="temple_buddhist" data-service-bg="url('33203817_m.jpg')"
+                        data-service-overlay="rgba(44, 90, 160, 0.55)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">temple_buddhist</span>
+                        <span>
+                            <h3 class="service-nav-item__title">墓じまい</h3>
+                            <span class="service-nav-item__hint">お墓の片付け。改葬・撤去の手続き</span>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="相続人調査"
+                        data-service-desc="戸籍を出生から死亡までさかのぼって収集し、相続人を確定。相続関係説明図と法定相続情報一覧図を作成いたします。"
+                        data-service-icon="family_restroom" data-service-bg="url('3553683_m.jpg')"
+                        data-service-overlay="rgba(0, 24, 51, 0.50)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">family_restroom</span>
+                        <span>
+                            <h3 class="service-nav-item__title">相続人調査</h3>
+                            <span class="service-nav-item__hint">戸籍収集で相続人を確定する</span>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="財産整理 / 相続財産調査"
+                        data-service-desc="預貯金・株式・投資信託の残高確認や残高証明書の取得、証券保管振替機構への情報開示請求、不動産の登記事項証明書・固定資産税評価証明書の取得、貸金庫の開扉支援、デジタル遺産（パソコン・スマートフォン）の調査、借金・債務の調査まで、財産の状況を漏れなく確認し、財産目録を作成いたします。"
+                        data-service-icon="account_balance_wallet" data-service-bg="url('33312042_m.jpg')"
+                        data-service-overlay="rgba(90, 65, 25, 0.52)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">account_balance_wallet</span>
+                        <span>
+                            <h3 class="service-nav-item__title">財産整理 / 相続人・相続財産調査</h3>
+                            <span class="service-nav-item__hint">財産を調べ、目録にまとめる</span>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="生前贈与手続き"
+                        data-service-desc="ご存命のうちに財産を引き継ぐ生前贈与について、贈与契約書の作成や必要な手続きをサポートいたします。相続発生後の負担を軽くしたい方、特定の方に確実に財産を渡したい方に向けたサービスです。"
+                        data-service-icon="volunteer_activism" data-service-bg="url('3553683_m.jpg')"
+                        data-service-overlay="rgba(44, 90, 160, 0.55)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">volunteer_activism</span>
+                        <span>
+                            <h3 class="service-nav-item__title">生前贈与手続き</h3>
+                            <span class="service-nav-item__hint">存命のうちに財産を引き継ぐ</span>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="家族信託サポート"
+                        data-service-desc="ご自身の財産の管理・承継方法を、信頼できるご家族に託す「家族信託」契約書の作成をサポートいたします。認知症で判断能力が低下した後も財産管理を続けられる仕組みとして、ご家族の事情に合わせて個別に設計いたします（料金は個別設計のため要相談）。"
+                        data-service-icon="groups" data-service-bg="url('33312042_m.jpg')"
+                        data-service-overlay="rgba(0, 24, 51, 0.50)">
+                        <span class="service-nav-item__icon material-symbols-rounded" aria-hidden="true">groups</span>
+                        <span>
+                            <h3 class="service-nav-item__title">家族信託サポート</h3>
+                            <span class="service-nav-item__hint">家族に財産管理を託す仕組み</span>
+                        </span>
+                    </button>
+                </li>
+                <!-- <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="事業承継・M&amp;A"
+                        data-service-desc="事業承継やM&amp;Aに関する法的サポートを提供いたします。" data-service-icon="handshake"
+                        data-service-bg="url('33203817_m.jpg')" data-service-overlay="rgba(90, 65, 25, 0.50)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">handshake</span>
+                        <span>
+                            <h3 class="service-nav-item__title">事業承継・M&amp;A</h3>
+                            <span class="service-nav-item__hint">会社の将来を法的にサポート</span>
+                        </span>
+                    </button>
+                </li> -->
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="任意後見契約締結と受任"
+                        data-service-desc="将来、認知症などで判断能力が低下した場合に備え、あらかじめ任意後見契約を結び、ご本人に代わって財産管理や生活上の手続きを行う任意後見受任者をお引き受けします。料金は財産規模に応じた月額制での個別見積りとなります。"
+                        data-service-icon="person_check" data-service-bg="url('3553683_m.jpg')"
+                        data-service-overlay="rgba(var(--main-color-rgb), 0.58)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">person_check</span>
+                        <span>
+                            <h3 class="service-nav-item__title">任意後見契約締結と受任</h3>
+                            <span class="service-nav-item__hint">認知症に備え、財産管理を依頼</span>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="死後事務委任契約と実行"
+                        data-service-desc="ご逝去後の葬送等手続きのための契約と実行をお引き受けいたします。役所への各種届出（健康保険・介護保険・マイナンバーカード返還・世帯主変更等）、ご在職中だった場合の会社退職手続き、ライフライン（電気・ガス・水道・電話等）の解約、クレジットカードの解約、各種有料サービスの解約まで、ご逝去後に必要な事務を幅広く代行いたします（料金：25万円〜、別途実費）。"
+                        data-service-icon="checklist" data-service-bg="url('33312042_m.jpg')"
+                        data-service-overlay="rgba(44, 90, 160, 0.55)">
+                        <span class="service-nav-item__icon material-symbols-rounded"
+                            aria-hidden="true">checklist</span>
+                        <span>
+                            <h3 class="service-nav-item__title">死後事務委任契約と実行</h3>
+                            <span class="service-nav-item__hint">逝去後の事務手続きを代行</span>
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="service-nav-item animate-on-scroll" data-service-title="遺言執行者業務"
+                        data-service-desc="遺言執行者として、遺言書の内容にもとづき、遺産分割協議書の作成、預貯金・株式の解約・名義変更、不動産名義変更登記（司法書士と連携）など、相続手続き全体を確実に実行いたします。お客様ご自身で遺言執行者を探す必要はありません。"
+                        data-service-icon="gavel" data-service-bg="url('33203817_m.jpg')"
+                        data-service-overlay="rgba(0, 24, 51, 0.50)">
+                        <span class="service-nav-item__icon material-symbols-rounded" aria-hidden="true">gavel</span>
+                        <span>
+                            <h3 class="service-nav-item__title">遺言執行者業務</h3>
+                            <span class="service-nav-item__hint">遺言の内容を確実に実行する</span>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <section id="features" class="features section-transition">
         <div class="container">
-            <h2 class="section-title animate-left">当事務所6つの特徴</h2>
+            <h2 class="section-title animate-left">当事務所の特徴</h2>
             <p class="section-subtitle animate-right animate-delay-1">お客様に選ばれる理由</p>
 
             <div class="features-grid">
-                <div class="feature-card animate-on-scroll animate-delay-1 enhanced-hover reveal floating">
-                    <div class="feature-number">1</div>
-                    <h3>初回相談無料</h3>
-                    <p>まずはお気軽にご相談ください。初回相談は完全無料で承っております。お悩みをお聞かせいただき、最適な解決策をご提案いたします。</p>
+                <div class="feature-card animate-on-scroll animate-delay-1 enhanced-hover reveal">
+                    <!-- <div class="feature-number">1</div> -->
+                    <h3>お客様自身でやり切る</h3>
+                    <p>依頼はいりません。チャットでご相談いただければ、できる限りガイドいたします。
+                    </p>
                 </div>
                 <div class="feature-card animate-on-scroll animate-delay-2 enhanced-hover reveal">
-                    <div class="feature-number">2</div>
-                    <h3>トータルサポート</h3>
-                    <p>「専門家に依頼したのに、自分でやることが多くて大変だった……。」ということが無いように、様々な手続きにトータルで対応いたします。</p>
+                    <!-- <div class="feature-number">2</div> -->
+                    <h3>移動を削減</h3>
+                    <p>メールやチャット、web会議などを利用して、すべての対応をなるべくご自宅で完結できるようにいたします。</p>
                 </div>
-                <div class="feature-card animate-on-scroll animate-delay-3 enhanced-hover reveal floating">
-                    <div class="feature-number">3</div>
-                    <h3>お客様の負担を最小限に</h3>
-                    <p>お客様が行う手続きは極力代行します。お客様が実施するのは主に「印鑑証明の取得」「ヒアリング対応」「相続人同士での遺産分割協議」「書類への署名と押印」です。</p>
-                </div>
-                <div class="feature-card animate-on-scroll animate-delay-4 enhanced-hover reveal">
-                    <div class="feature-number">4</div>
-                    <h3>訪問面談対応</h3>
-                    <p>お客様のご都合に合わせて訪問面談も承っております。お忙しい方やお体の不自由な方も安心してご相談いただけます。</p>
-                </div>
-                <div class="feature-card animate-on-scroll animate-delay-1 enhanced-hover reveal floating">
-                    <div class="feature-number">5</div>
-                    <h3>土日祝日対応</h3>
-                    <p>平日はお仕事でお忙しい方のために、土日祝日のご相談も承っております。お客様のご都合に合わせて柔軟に対応いたします。</p>
-                </div>
-                <div class="feature-card animate-on-scroll animate-delay-2 enhanced-hover reveal">
-                    <div class="feature-number">6</div>
-                    <h3>明確な料金体系</h3>
-                    <p>初回面談時に概算の費用をご提示いたします。お客様に安心してご依頼いただけるよう、透明性の高い料金設定を心がけております。</p>
-                </div>
-                <!-- <div class="feature-card animate-on-scroll animate-delay-3 enhanced-hover reveal floating">
-                    <div class="feature-number">7</div>
-                    <h3>豊富な実績</h3>
-                    <p>これまで数多くの相続手続きを手がけ、お客様から高い評価をいただいております。経験豊富な行政書士が責任を持って対応いたします。</p>
-                </div>
-                <div class="feature-card animate-on-scroll animate-delay-4 enhanced-hover reveal">
-                    <div class="feature-number">8</div>
-                    <h3>親身なサポート</h3>
-                    <p>お客様お一人お一人の状況に合わせて、親身になってサポートいたします。些細な疑問や不安もお気軽にご相談ください。</p>
-                </div> -->
+
             </div>
         </div>
     </section>
 
-    <!-- Profile Section -->
+    <!-- ===== 共通セクション：プロフィール ===== -->
     <section id="profile" class="profile">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">行政書士プロフィール</h2>
-            <p class="section-subtitle animate-on-scroll">経験豊富な専門家がお客様をサポート</p>
+            <h2 class="section-title animate-on-scroll">行政書士事務所プロフィール</h2>
+            <p class="section-subtitle animate-on-scroll" id="profile-subtitle">経験豊富な専門家がお客様をサポート</p>
 
             <div class="profile-content animate-on-scroll">
                 <div class="profile-image"><img loading="lazy" class="img" src="./No1.png" style="
@@ -1173,214 +3012,552 @@
                 <div class="profile-details">
                     <h3>行政書士 鈴木 健二</h3>
                     <div class="profile-text">
-                        <p>宮城県仙台市出身。物事を深く考え、丁寧な対応を心がけています。性格検査、MBTIはINFJです。
-                            社会人になってから経営学修士（MBA）を取得し、東証プライム企業の子会社運営など、事業経営の現場で豊富な経験を積んできました。業務を行いながら事業承継の重要性を強く感じ、行政書士として終活や事業承継のサポートに取り組んでいます。行政書士業務は兼業で行なっており、一件一件を丁寧にご対応するため業務数を制限しながら取り組んでいます。
-                            「お客様の立場に立ち、安心できるサポート」をモットーに、人生の大切な節目を支えるお手伝いをいたします。
+                        <p>社会人になってから経営学修士（MBA）を取得し、東証プライム企業子会社の代表取締役（CEO）として経営の最前線に立ってきました。また、他社の社外CIO（最高情報責任者）として、IT戦略の策定にも携わる中、事業承継の重要性を強く感じ、行政書士として終活や事業承継のサポートに取り組んでいます。行政書士業務は兼業で行なっており、一件一件を丁寧にご対応するため業務数を制限しながら取り組んでいます。「お客様の立場に立ち、安心できるサポート」をモットーに、人生の大切な節目を支えるお手伝いをいたします。
                         </p>
-
-                        <!-- <p>お客様の立場に立ち、わかりやすく丁寧な説明を心がけ、安心してお任せいただけるよう努めております。</p> -->
-
-                        <!-- <p>「お客様の負担を最小限に」をモットーに、複雑な相続手続きをトータルでサポートし、お客様に喜んでいただけることが私の一番の喜びです。</p> -->
                     </div>
 
-                    <div class="credentials">
-                        <h4>資格・所属</h4>
-                        <ul>
-                            <li>行政書士（宮城県行政書士会所属）</li>
-                            <!-- <li>相続診断士</li>
-                            <li>終活カウンセラー</li> -->
-                            <li>宮城県行政書士会　会員</li>
-                        </ul>
+
+                </div>
+            </div>
+            <div class="office-overview">
+                <h4>事務所概要</h4>
+                <dl class="office-overview__list">
+                    <div class="office-overview__row">
+                        <dt>名称</dt>
+                        <dd>仙台行政書士鈴木事務所</dd>
+                    </div>
+                    <div class="office-overview__row">
+                        <dt>代表者</dt>
+                        <dd>鈴木健二</dd>
+                    </div>
+                    <div class="office-overview__row">
+                        <dt>住所</dt>
+                        <dd>宮城県仙台市青葉区昭和町４－９ カーサ北仙台 301号室</dd>
+                    </div>
+                    <div class="office-overview__row">
+                        <dt>アクセス方法</dt>
+                        <dd>JR仙山線「北仙台駅」より徒歩5分</dd>
+                    </div>
+                    <div class="office-overview__row">
+                        <dt>営業時間・定休日</dt>
+                        <dd>インターネットからいつでもお申し込みを受け付けております。（不定休）</dd>
+                    </div>
+                    <div class="office-overview__row">
+                        <dt>所属</dt>
+                        <dd>宮城県行政書士会</dd>
+                    </div>
+                </dl>
+                <div class="office-overview__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.985857901343!2d140.8662874761032!3d38.27982067186248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f89877c6b240001%3A0x8354e39e6bdccd1d!2z44Kr44O844K15YyX5LuZ5Y-w!5e0!3m2!1sja!2sjp!4v1783238490822!5m2!1sja!2sjp"
+                        width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin" title="事務所所在地地図"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== toC サービス・プロセス ===== -->
+    <div class="mode-toc">
+
+        <div class="service-modal" id="service-modal" aria-hidden="true">
+            <div class="service-modal__panel" role="dialog" aria-modal="true" aria-labelledby="service-modal-title">
+                <button type="button" class="service-modal__close" id="service-modal-close" aria-label="閉じる">×</button>
+                <div class="service-modal__eyebrow">SERVICE DETAIL</div>
+                <h3 class="service-modal__title" id="service-modal-title"></h3>
+                <div class="service-modal__body" id="service-modal-body"></div>
+            </div>
+        </div>
+
+
+        <!-- Process Section (toC) -->
+        <section id="process" class="process">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">手続きの流れ</h2>
+                <p class="section-subtitle animate-on-scroll">初回相談から完了まで、安心のサポート体制</p>
+
+                <div class="process-steps">
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-number">1</div>
+                        <h3>初回相談（無料）</h3>
+                        <p>お悩みをお聞かせください</p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-number">2</div>
+                        <h3>詳細ヒアリング</h3>
+                        <p>状況を詳しく確認いたします</p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-number">3</div>
+                        <h3>お見積り・ご契約</h3>
+                        <p>費用をご提示し、ご納得いただけましたらご契約</p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-number">4</div>
+                        <h3>書類作成・手続き</h3>
+                        <p>必要書類の作成・取得を代行</p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-number">5</div>
+                        <h3>完了・お渡し</h3>
+                        <p>手続き完了後、書類をお渡し</p>
+                    </div>
+                    <!-- <div class="process-step animate-on-scroll">
+                        <div class="process-number">6</div>
+                        <h3>ご本人様へのご案内</h3>
+                        <p>落ち着いたタイミングで、ご自身の今後のご相談も承ります</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /mode-toc (services + process) -->
+
+    <!-- ===== toB サービス・プロセス ===== -->
+    <div class="mode-tob" style="display:none">
+
+        <!-- SERVICE Section (toB) -->
+        <section id="services-b" class="tob-services section-transition">
+            <div class="container">
+                <p class="tob-section-label animate-on-scroll">SERVICE</p>
+                <h2 class="tob-section-title animate-on-scroll">サービス内容</h2>
+
+                <div class="tob-services__grid">
+                    <div class="tob-service-card animate-on-scroll">
+                        <div class="tob-service-card__icon">1</div>
+                        <h3 class="tob-service-card__title">IT導入補助金<br>申請支援</h3>
+                        <p class="tob-service-card__desc">
+                            中小企業・小規模事業者向けIT導入補助金の申請書類作成から採択後の報告まで一貫サポート。費用の最大3/4を補助金でカバーします。</p>
+                    </div>
+                    <div class="tob-service-card animate-on-scroll">
+                        <div class="tob-service-card__icon">2</div>
+                        <h3 class="tob-service-card__title">ITコンサルティング</h3>
+                        <p class="tob-service-card__desc">月次顧問として貴社の「中の人」となり、IT戦略の立案から実行まで伴走。経営視点でIT活用を最大化します。</p>
+                    </div>
+                    <div class="tob-service-card animate-on-scroll">
+                        <div class="tob-service-card__icon">3</div>
+                        <h3 class="tob-service-card__title">Google/SNS<br>広告運用サポート</h3>
+                        <p class="tob-service-card__desc">
+                            Google広告・Meta広告・LINE広告など各種デジタル広告の設計・運用・改善を支援。補助金活用による低コスト導入も可能です。</p>
+                    </div>
+                    <div class="tob-service-card animate-on-scroll">
+                        <div class="tob-service-card__icon">4</div>
+                        <h3 class="tob-service-card__title">業務フロー分析<br>改善提案</h3>
+                        <p class="tob-service-card__desc">現状の業務を可視化し、ITで解決できるボトルネックを特定。改善計画の立案から実行支援まで一括して対応します。</p>
+                    </div>
+                    <div class="tob-service-card animate-on-scroll">
+                        <div class="tob-service-card__icon">5</div>
+                        <h3 class="tob-service-card__title">システム・ツール<br>選定支援</h3>
+                        <p class="tob-service-card__desc">会計ソフト・CRM・在庫管理・勤怠管理など、貴社の業務に最適なツールを比較・選定。ベンダー交渉も支援します。</p>
+                    </div>
+                    <div class="tob-service-card animate-on-scroll">
+                        <div class="tob-service-card__icon">6</div>
+                        <h3 class="tob-service-card__title">DX推進サポート<br>（伴走型）</h3>
+                        <p class="tob-service-card__desc">デジタル変革の全体設計から社内定着まで。補助金を組み合わせながら、段階的なDX推進を支援します。</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">終活関連のサービスを提供</h2>
-            <p class="section-subtitle animate-on-scroll">現在からご逝去後まで幅広い業務に対応</p>
+        <!-- POINT Section (toB) -->
+        <section class="tob-points section-transition">
+            <div class="container">
+                <p class="tob-section-label animate-on-scroll">POINT</p>
+                <h2 class="tob-section-title animate-on-scroll">当事務所が選ばれる理由</h2>
 
-            <div class="services-grid">
-                <!-- <div class="service-item animate-on-scroll">
-                    <h3>遺産分割協議書作成</h3>
-                    <p>相続人全員の合意内容を正確に文書化し、法的に有効な遺産分割協議書を作成いたします。</p>
-                </div> -->
-                <div class="service-item animate-on-scroll">
-                    <h3>遺言書作成</h3>
-                    <p>公正証書遺言・自筆証書遺言の作成支援を行い、お客様の意思を確実に実現できる遺言書をサポートいたします。</p>
-                </div>
-                <!-- <div class="service-item animate-on-scroll">
-                    <h3>相続手続き代行</h3>
-                    <p>各種書類の取得・作成から提出まで、相続に関する煩雑な手続きを代行いたします。</p>
-                </div> -->
-                <div class="service-item animate-on-scroll">
-                    <h3>墓じまい</h3>
-                    <p>墓じまい手続きを代行いたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>相続人調査</h3>
-                    <p>戸籍収集により相続人を確定し、相続関係説明図を作成いたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>財産整理/相続財産調査</h3>
-                    <p>ご本人/被相続人の財産を調査し、財産目録を作成いたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>死後事務委任</h3>
-                    <p>ご逝去後の葬送等手続きのための契約と実行をお引き受けいたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>生前贈与手続き</h3>
-                    <p>生前贈与に関する契約書作成や手続きをサポートいたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>家族信託サポート</h3>
-                    <p>家族信託契約書の作成や手続きをお手伝いいたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>事業承継・M&A</h3>
-                    <p>事業承継やM&Aに関する法的サポートを提供いたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>任意後見契約締結と受任</h3>
-                    <p>認知症に備えて、任意後見契約の作成と任意後見受任者をお引き受けします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>死後事務委任契約と実行</h3>
-                    <p>ご逝去後の葬送等手続きのための契約と実行をお引き受けいたします。</p>
+                <div class="tob-point animate-on-scroll">
+                    <div class="tob-point__image">
+                        <img src="3553683_m.jpg" alt="伴走サポート" loading="lazy">
+                    </div>
+                    <div class="tob-point__content">
+                        <div class="tob-point__number">1</div>
+                        <h3 class="tob-point__title">「中の人」として伴走</h3>
+                        <p class="tob-point__desc">
+                            外注先ではなく、貴社のチームの一員として内側からサポート。
+                            経営課題を深く理解し、最適なIT活用を一緒に考え、実行まで伴走します。
+                            外部コンサルにありがちな「報告書だけ」で終わることはありません。
+                        </p>
+                    </div>
                 </div>
 
-                <div class="service-item animate-on-scroll">
-                    <h3>遺言執行者業務</h3>
-                    <p>遺言執行者として、遺言の内容を確実に実行いたします。</p>
+                <div class="tob-point tob-point--reverse animate-on-scroll">
+                    <div class="tob-point__image">
+                        <img src="33312042_m.jpg" alt="補助金活用" loading="lazy">
+                    </div>
+                    <div class="tob-point__content">
+                        <div class="tob-point__number">2</div>
+                        <h3 class="tob-point__title">補助金で費用を大幅削減</h3>
+                        <p class="tob-point__desc">
+                            IT導入補助金を活用することで、システム導入費用の最大3/4をカバー。
+                            行政書士として補助金申請のプロフェッショナルが確実に申請を進めます。
+                            「使える制度は全部使う」が当事務所のスタンスです。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tob-point animate-on-scroll">
+                    <div class="tob-point__image">
+                        <img src="33203817_m.jpg" alt="複合知識" loading="lazy">
+                    </div>
+                    <div class="tob-point__content">
+                        <div class="tob-point__number">3</div>
+                        <h3 class="tob-point__title">MBA×IT×行政書士の<br>複合知識</h3>
+                        <p class="tob-point__desc">
+                            経営学修士の経営視点、IT実務の技術知識、行政書士の法務スキル。
+                            この3つを掛け合わせることで、他にはない総合的な支援を提供します。
+                            東証プライム子会社運営の実務経験が、机上の空論ではないリアルな提案を可能にします。
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- <div class="container" style="margin-top: 40px;">
-            <h2 class="section-title animate-on-scroll">任意後見・死後事務委任</h2>
-            <p class="section-subtitle animate-on-scroll">何かあった時の備えに対応</p>
+        </section>
 
-            <div class="services-grid">
+        <!-- FLOW Section (toB) -->
+        <section id="process-b" class="tob-flow section-transition">
+            <div class="container">
+                <p class="tob-section-label animate-on-scroll">FLOW</p>
+                <h2 class="tob-section-title animate-on-scroll">ご依頼の流れ</h2>
 
-                <div class="service-item animate-on-scroll">
-                    <h3>任意後見契約締結と受任</h3>
-                    <p>認知症に備えて、任意後見契約の作成と任意後見受任者をお引き受けします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>死後事務委任契約と実行</h3>
-                    <p>ご逝去後の葬送等手続きのための契約と実行をお引き受けいたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>家族信託サポート</h3>
-                    <p>家族信託契約書の作成や手続きをお手伝いいたします。</p>
-                </div>
-                <div class="service-item animate-on-scroll">
-                    <h3>遺言執行者業務</h3>
-                    <p>遺言執行者として、遺言の内容を確実に実行いたします。</p>
+                <div class="tob-flow__steps">
+                    <div class="tob-flow__step animate-on-scroll">
+                        <div class="tob-flow__number">1</div>
+                        <div class="tob-flow__body">
+                            <h3>初回相談（無料）</h3>
+                            <p>現状の課題をヒアリングし、IT活用や補助金の可能性をご説明します。</p>
+                        </div>
+                    </div>
+                    <div class="tob-flow__step animate-on-scroll">
+                        <div class="tob-flow__number">2</div>
+                        <div class="tob-flow__body">
+                            <h3>現状分析・IT活用プランニング</h3>
+                            <p>業務フローを可視化し、IT導入効果を試算。最適なプランをご提案します。</p>
+                        </div>
+                    </div>
+                    <div class="tob-flow__step animate-on-scroll">
+                        <div class="tob-flow__number">3</div>
+                        <div class="tob-flow__body">
+                            <h3>補助金申請</h3>
+                            <p>申請書類の作成から採択まで、行政書士として責任を持って支援します。</p>
+                        </div>
+                    </div>
+                    <div class="tob-flow__step animate-on-scroll">
+                        <div class="tob-flow__number">4</div>
+                        <div class="tob-flow__body">
+                            <h3>IT導入・運用開始</h3>
+                            <p>ベンダー選定からシステム導入、社内展開まで伴走してサポートします。</p>
+                        </div>
+                    </div>
+                    <div class="tob-flow__step animate-on-scroll">
+                        <div class="tob-flow__number">5</div>
+                        <div class="tob-flow__body">
+                            <h3>効果測定・改善提案</h3>
+                            <p>導入後の効果を測定し、継続的な改善をPDCAサイクルで支援します。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div> -->
-    </section>
+        </section>
 
-    <!-- Process Section -->
-    <section id="process" class="process">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">手続きの流れ</h2>
-            <p class="section-subtitle animate-on-scroll">初回相談から完了まで、安心のサポート体制</p>
+    </div><!-- /mode-tob (service + point + flow) -->
 
-            <div class="process-steps">
-                <div class="process-step animate-on-scroll">
-                    <div class="process-number">1</div>
-                    <h3>初回相談（無料）</h3>
-                    <p>お悩みをお聞かせください</p>
-                </div>
-                <div class="process-step animate-on-scroll">
-                    <div class="process-number">2</div>
-                    <h3>詳細ヒアリング</h3>
-                    <p>状況を詳しく確認いたします</p>
-                </div>
-                <div class="process-step animate-on-scroll">
-                    <div class="process-number">3</div>
-                    <h3>お見積り・ご契約</h3>
-                    <p>費用をご提示し、ご納得いただけましたらご契約</p>
-                </div>
-                <div class="process-step animate-on-scroll">
-                    <div class="process-number">4</div>
-                    <h3>書類作成・手続き</h3>
-                    <p>必要書類の作成・取得を代行</p>
-                </div>
-                <div class="process-step animate-on-scroll">
-                    <div class="process-number">5</div>
-                    <h3>完了・お渡し</h3>
-                    <p>手続き完了後、書類をお渡し</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- ===== 共通セクション：お問い合わせ ===== -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title" style="color:#fff">お問い合わせ</h2>
             <p class="section-subtitle" style="color:#fff">初回相談無料・宮城県仙台市名取市全域対応</p>
 
-            <div class="contact-info">
-                <!-- <div class="contact-item animate-on-scroll">
-                    <h3>📞 お電話でのご相談</h3>
-                    <p>平日 9:00〜18:00<br>
-                        土日祝日も対応可能<br>
-                        TEL: 043-XXX-XXXX</p>
-                </div>
+            <!-- <div class="contact-info">
                 <div class="contact-item animate-on-scroll">
-                    <h3>📧 メールでのご相談</h3>
-                    <p>24時間受付<br> こちらをクリックして<br>
-                        わずか2タップでお申し込み<br>
-                    </p>
-                </div> -->
-                <div class=" contact-item animate-on-scroll">
-                    <h3>🛜 web面談</h3>
+                    <h3>web面談</h3>
                     <p>土日祝日関わらず<br>
                         ご都合の良い時間でご対応いたします<br>
                     </p>
                 </div>
                 <div class="contact-item animate-on-scroll">
-                    <h3>🏠 訪問面談</h3>
+                    <h3>訪問面談</h3>
                     <p>仙台市・名取市全域対応<br>
                         ご都合の良い場所へお伺いします<br>
                     </p>
                 </div>
-            </div>
+            </div> -->
 
-            <div style="margin-top: 2rem;">
-                <!-- <a href="mailto:info@sample.com?subject=相談依頼&body=何も入力せずにこのままメールを送信してくださメールを送信してください。受信確認後折り返しのメールを送信いたします。"
-                    style="text-decoration: none;color: inherit;" class="cta-button"> -->
-                <a id="emailLink" href="javascript:OnLinkClick();" style="text-decoration: none;color: inherit;"
+            <p class="section-subtitle" style="color:var(--main-color);font-size:1em;">
+                お電話やメールの前に、チャットでの連絡が便利です。<br />ブラウザを閉じても履歴が残り残るため、時間をかけて現状の整理ができます。<br />ぜひご検討ください。</p>
+            <div style="margin-top: -1rem;">
+                <!-- <a id="emailLink" href="javascript:OnLinkClick();" style="text-decoration: none;color: inherit;"
                     class="cta-button">
-                    今すぐ無料相談を申し込む</a>
+                    メールで相談を申し込む</a> -->
+                <a href="#contact" class="cta-button" data-action="open-chat">チャットで詳しく聞く</a>
             </div>
-            <p class="section-subtitle" style="color:#fff;font-size:0.8em;margin-top: 0.5em;">
-                入力不要！「上記ボタン」とアプリ起動後の「メール送信」の２タップのみでお申し込み完了</p>
+            <p class="section-subtitle" style="color:#fff;font-size:0.8em;margin-top: 2em;">
+                直接のご連絡をご希望の場合は<a id="emailLink" href="#contact" data-action="email-link"
+                    style="color: inherit;">こちら</a>からメールをお送りください。<br />
+                入力不要、アプリ起動後の「メール送信」の２タップのみでお申し込み完了です</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>上記の他各種許認可業務も対応します</p>
-            <p>&copy; 2025 仙台行政書士鈴木事務所. All rights reserved.</p>
+
+        <!-- 事務所名バー -->
+        <div class="footer__top">
+            <div class="footer__top-inner">
+                <div class="footer__office-name">仙台行政書士鈴木事務所</div>
+                <div class="footer__tagline">宮城県行政書士会所属｜行政書士 鈴木 健二</div>
+            </div>
         </div>
+
+        <!-- メインコンテンツ（4カラム） -->
+        <div class="footer__main">
+            <div class="footer__grid">
+
+                <!-- カラム1：事務所情報 -->
+                <div class="footer-col">
+                    <div class="footer-col__title">Office Info</div>
+
+                    <div class="footer-col__info-block">
+                        <div class="footer-col__info-label">所在地</div>
+                        <div class="footer-col__info-value">宮城県仙台市</div>
+                    </div>
+
+                    <div class="footer-col__info-block">
+                        <div class="footer-col__info-label">対応エリア</div>
+                        <div class="footer-col__info-value">仙台市・名取市・全域対応<br>（web面談は全国対応）</div>
+                    </div>
+
+                    <div class="footer-col__info-block">
+                        <div class="footer-col__info-label">営業時間</div>
+                        <div class="footer-col__info-value">平日・土日祝日対応<br>（事前予約制）</div>
+                    </div>
+
+                    <!-- <div class="footer-col__info-block">
+                        <div class="footer-col__info-label">面談方法</div>
+                        <div class="footer-col__info-value">🛜 web面談（全国対応）<br>🏠 訪問面談（宮城県内）</div>
+                    </div> -->
+
+                    <div class="footer-col__info-block">
+                        <div class="footer-col__info-label">初回相談</div>
+                        <div class="footer-col__info-value" style="color:var(--main-color);font-weight:bold;">無料</div>
+                    </div>
+                </div>
+
+                <!-- カラム2：個人向けサービス -->
+                <div class="footer-col">
+                    <div class="footer-col__title">個人のお客様</div>
+
+                    <div class="footer-col__list--category">
+                        <div class="footer-col__category-label">遺言・相続</div>
+                        <ul class="footer-col__list">
+                            <li><a href="/">遺言書作成（公正証書・自筆証書）</a></li>
+                            <li><a href="/">相続人調査・相続関係説明図</a></li>
+                            <li><a href="/">相続財産調査・財産目録作成</a></li>
+                            <li><a href="/">遺言執行者業務</a></li>
+                            <li><a href="/">生前贈与手続き</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col__list--category">
+                        <div class="footer-col__category-label">終活・将来の備え</div>
+                        <ul class="footer-col__list">
+                            <li><a href="/">死後事務委任契約・実行</a></li>
+                            <li><a href="/">任意後見契約締結・受任</a></li>
+                            <li><a href="/">家族信託サポート</a></li>
+                            <li><a href="/">墓じまい手続き</a></li>
+                            <li><a href="/">事業承継・M&amp;A支援</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- カラム3：法人向けサービス -->
+                <div class="footer-col">
+                    <div class="footer-col__title">法人・事業者様</div>
+
+                    <div class="footer-col__list--category">
+                        <div class="footer-col__category-label">補助金・助成金</div>
+                        <ul class="footer-col__list">
+                            <li><a href="/?type=business">IT導入補助金 申請支援</a></li>
+                            <li><a href="/?type=business">各種補助金・助成金 申請代行</a></li>
+                            <li><a href="/?type=business">補助金採択後の報告・管理</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col__list--category">
+                        <div class="footer-col__category-label">ITコンサルティング</div>
+                        <ul class="footer-col__list">
+                            <li><a href="/?type=business">ITコンサルティング</a></li>
+                            <li><a href="/?type=business">業務フロー分析・改善提案</a></li>
+                            <li><a href="/?type=business">システム・ツール選定支援</a></li>
+                            <li><a href="/?type=business">Google/SNS 広告運用サポート</a></li>
+                            <li><a href="/?type=business">DX推進サポート（伴走型）</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- カラム4：サイトマップ＋許認可業務 -->
+                <div class="footer-col">
+                    <div class="footer-col__title">Site Map</div>
+
+                    <ul class="footer-col__list" style="margin-bottom:1.5rem;">
+                        <li><a href="/">トップページ（個人のお客様）</a></li>
+                        <li><a href="/?type=business">法人・事業者様向けページ</a></li>
+                        <li><a href="/#services">サービス一覧</a></li>
+                        <li><a href="/#profile">行政書士事務所プロフィール</a></li>
+                        <li><a href="/#contact">お問い合わせ・無料相談</a></li>
+                    </ul>
+
+                    <div class="footer-col__title" style="margin-top:1rem;">連携支援</div>
+                    <p style="margin:0; line-height:1.7; color: rgba(255, 255, 255, 0.75);">必要に応じて、他士業と連携してご紹介可能です。</p>
+                </div>
+
+            </div><!-- /footer__grid -->
+
+            <!-- 対応エリア帯 -->
+            <div class="footer__area">
+                <div class="footer__area-title">Service Area</div>
+                <div class="footer__area-text">
+                    仙台市（青葉区・宮城野区・若林区・太白区・泉区）・名取市・岩沼市・塩竈市・多賀城市・富谷市・大和町・大郷町・松島町・利府町・七ヶ浜町・その他宮城県内全域対応
+                    　※web面談は全国対応
+                </div>
+            </div>
+
+            <!-- 取扱業務一覧 -->
+            <div class="footer__licenses">
+                <div class="footer__licenses-title">取扱業務一覧</div>
+                <div class="footer__licenses-grid">
+                    <span>遺言書作成</span>
+                    <span>公正証書遺言</span>
+                    <span>自筆証書遺言</span>
+                    <span>遺言執行</span>
+                    <span>相続人調査</span>
+                    <span>相続財産調査</span>
+                    <span>相続関係説明図</span>
+                    <span>遺産分割協議書</span>
+                    <span>生前贈与</span>
+                    <span>家族信託</span>
+                    <span>任意後見</span>
+                    <span>死後事務委任</span>
+                    <span>墓じまい</span>
+                    <span>事業承継</span>
+                    <span>M&amp;A支援</span>
+                    <span>IT導入補助金</span>
+                    <span>ITコンサルティング</span>
+                    <span>DX推進支援</span>
+                    <span>広告運用</span>
+                    <span>業務改善</span>
+                </div>
+            </div>
+
+        </div><!-- /footer__main -->
+
+        <!-- コピーライト -->
+        <div class="footer__bottom">
+            <p>&copy; 2025 仙台行政書士鈴木事務所. All rights reserved. | 宮城県行政書士会所属</p>
+        </div>
+
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        // ===== Mode Switching =====
+        const isBusiness = new URLSearchParams(location.search).get('type') === 'business';
+
+        if (isBusiness) {
+            // Update page title and meta for toB
+            document.getElementById('page-title').textContent =
+                'IT導入補助金・ITコンサルティングなら - 仙台行政書士鈴木事務所';
+            document.getElementById('meta-desc').setAttribute('content',
+                '仙台市・名取市の行政書士がIT導入補助金の申請から活用まで一括サポート。ITコンサルティング顧問として業務改善・DX推進を伴走支援。初回相談無料。');
+            document.getElementById('og-title').setAttribute('content',
+                '仙台行政書士鈴木事務所 | IT導入補助金・ITコンサルティング');
+            document.getElementById('og-desc').setAttribute('content',
+                '仙台市・名取市の行政書士がIT導入補助金申請とITコンサルで業務改善を支援。初回無料相談受付中。');
+
+            // Update header banner
+            document.getElementById('header-banner').innerHTML =
+                '<h1 style="font-size: 0.8em;font-weight: lighter;">仙台でIT導入補助金申請・ITコンサルティング・業務改善なら</h1>';
+
+            // Update canonical
+            document.getElementById('canonical').href =
+                location.origin + location.pathname + '?type=business';
+
+            // Update schema.org
+            document.getElementById('schema-org').textContent = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": ["LegalService", "ProfessionalService"],
+                "name": "仙台行政書士鈴木事務所",
+                "description": "仙台市・名取市の行政書士がIT導入補助金申請・ITコンサルティング・業務改善を支援",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "仙台市",
+                    "addressRegion": "宮城県",
+                    "addressCountry": "JP"
+                },
+                "areaServed": ["仙台市", "名取市"],
+                "priceRange": "初回無料相談",
+                "knowsAbout": ["IT導入補助金", "ITコンサルティング", "DX推進", "業務改善", "広告運用"]
+            });
+
+            // Show toB, hide toC
+            document.querySelectorAll('.mode-tob').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.mode-toc').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('#message, .guide-section').forEach(el => el.style.display = 'none');
+
+            // Update nav "サービス" link to point to toB services
+            const navServicesLink = document.querySelector('.nav > a[href="#services"]');
+            if (navServicesLink) navServicesLink.href = '#services-b';
+
+            // Active button
+            document.getElementById('btn-tob').classList.add('active');
+        } else {
+            // Set toC canonical
+            document.getElementById('canonical').href =
+                location.origin + location.pathname;
+
+            // Active button
+            document.getElementById('btn-toc').classList.add('active');
+        }
+
+        // ===== Safe event bindings (replaces inline onclick/javascript handlers) =====
+        document.querySelectorAll('[data-action="open-chat"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                if (link.classList.contains('plan-card__cta')) {
+                    e.stopPropagation();
+                }
+                if (window.HubSpotConversations?.widget?.open) {
+                    window.HubSpotConversations.widget.open();
+                }
+            });
+        });
+
+        document.querySelectorAll('.plan-diagnostic__option').forEach(btn => {
+            btn.addEventListener('click', function () {
+                selectDiagnosticOption(this.dataset.group, this.dataset.value, this);
+            });
+        });
+
+        document.querySelectorAll('[data-action="show-estimate"]').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                showOmakaseEstimate();
+            });
+        });
+
+        document.querySelectorAll('[data-action="email-link"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                OnLinkClick();
+            });
+        });
+
+        // ===== Smooth scrolling for navigation links =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
                 if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
@@ -1389,7 +3566,7 @@
             });
         });
 
-        // Scroll animations
+        // ===== Scroll animations =====
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1403,38 +3580,42 @@
             });
         }, observerOptions);
 
-        // Observe all elements with animation class
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll(
+            '.animate-on-scroll, .animate-left, .animate-right, .animate-scale, .stagger-item'
+        ).forEach(el => observer.observe(el));
 
-        // Header scroll effect
+        // ===== Scroll progress bar =====
+        const header = document.querySelector('.header');
+        const toggleHeaderVisibility = () => {
+            if (!header) return;
+            const shouldShow = window.scrollY > 80;
+            header.classList.toggle('is-visible', shouldShow);
+            header.style.boxShadow = shouldShow ? '0 4px 15px rgba(0,0,0,0.15)' : '0 2px 5px rgba(0,0,0,0.1)';
+        };
+
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.style.boxShadow = '0 4px 15px rgba(0,0,0,0.15)';
-            } else {
-                header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
-            }
+            toggleHeaderVisibility();
+
+            const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            document.querySelector('.scroll-progress').style.width = scrolled + '%';
         });
 
-        // Interactive hover effects
-        document.querySelectorAll('.feature-card, .service-item').forEach(card => {
+        toggleHeaderVisibility();
+
+        // ===== Interactive hover effects =====
+        document.querySelectorAll('.feature-card, .service-item, .tob-service-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
                 card.style.transform = 'translateY(-5px)';
             });
-
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0)';
             });
         });
-        document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right, .animate-scale').forEach(el => {
-            observer.observe(el);
-        });
 
-
-
-        const slides = document.querySelectorAll('.hero-slide');
+        // ===== Hero slide carousel =====
+        // Select slides only from the active mode section
+        const activeSelector = isBusiness ? '.mode-tob .hero-slide' : '.mode-toc .hero-slide';
+        const slides = document.querySelectorAll(activeSelector);
         let current = 0;
 
         function showNextSlide() {
@@ -1443,29 +3624,204 @@
             slides[current].classList.add('active');
         }
 
-        setInterval(showNextSlide, 5000);
+        if (slides.length > 0) {
+            setInterval(showNextSlide, 5000);
+        }
 
+        // ===== Service modal =====
+        const serviceModal = document.getElementById('service-modal');
+        const serviceModalTitle = document.getElementById('service-modal-title');
+        const serviceModalBody = document.getElementById('service-modal-body');
+        const serviceModalClose = document.getElementById('service-modal-close');
+
+        function openServiceModal(title, desc) {
+            if (!serviceModal || !serviceModalTitle || !serviceModalBody) return;
+            serviceModalTitle.textContent = title;
+            serviceModalBody.innerHTML = `<p>${desc}</p>`;
+            serviceModal.classList.add('is-open');
+            serviceModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+        }
+
+        function openModalHTML(title, html) {
+            if (!serviceModal || !serviceModalTitle || !serviceModalBody) return;
+            serviceModalTitle.textContent = title;
+            serviceModalBody.innerHTML = html;
+            serviceModal.classList.add('is-open');
+            serviceModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+        }
+
+        function closeServiceModal() {
+            if (!serviceModal) return;
+            serviceModal.classList.remove('is-open');
+            serviceModal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+        }
+
+        document.querySelectorAll('.service-nav-item').forEach(button => {
+            const serviceBackground = button.dataset.serviceBg;
+            const serviceOverlay = button.dataset.serviceOverlay;
+            if (serviceBackground) {
+                button.style.setProperty('--service-bg', serviceBackground);
+            }
+            if (serviceOverlay) {
+                button.style.setProperty('--service-overlay', serviceOverlay);
+            }
+
+            button.addEventListener('click', () => {
+                openServiceModal(
+                    button.dataset.serviceTitle || '',
+                    button.dataset.serviceDesc || ''
+                );
+            });
+        });
+
+        // ===== Fee diagnostic tool (toC) =====
+        const diagnosticAnswers = { property: null, tax: null, banks: null };
+
+        function selectDiagnosticOption(group, value, btn) {
+            diagnosticAnswers[group] = value;
+            btn.parentElement.querySelectorAll('.plan-diagnostic__option').forEach(b => b.classList.remove('is-selected'));
+            btn.classList.add('is-selected');
+        }
+
+        function computeOmakaseEstimate(hasProperty, tax, banks) {
+            if (tax === 'yes') {
+                if (banks === 'le2') return { plan: 'フル', range: '100万円〜120万円' };
+                if (banks === '3to4') return { plan: 'フル', range: '120万円〜150万円' };
+                return { plan: 'フル（複雑なケース）', isQuote: true };
+            }
+            if (banks === 'ge5') {
+                return { plan: (hasProperty ? '標準' : 'ライト') + '（複雑なケース）', isQuote: true };
+            }
+            const result = hasProperty
+                ? (banks === 'le2' ? { plan: '標準', range: '50万円〜65万円' } : { plan: '標準', range: '65万円〜80万円' })
+                : (banks === 'le2' ? { plan: 'ライト', range: '35万円〜50万円' } : { plan: 'ライト', range: '50万円〜65万円' });
+            if (tax === 'unknown') {
+                result.note = '相続税が発生する場合は「フル」（100万円〜）が目安になります。まずは無料相談で財産状況をご確認ください。';
+            }
+            return result;
+        }
+
+        function showOmakaseEstimate() {
+            const { property, tax, banks } = diagnosticAnswers;
+            const resultEl = document.getElementById('omakase-result');
+            if (!property || !tax || !banks) {
+                alert('3つの質問すべてにお答えください');
+                return;
+            }
+            const result = computeOmakaseEstimate(property === 'yes', tax, banks);
+            const amountText = result.isQuote ? '個別お見積もり' : result.range;
+            const headline = result.isQuote
+                ? `<strong>あなたの場合は個別お見積もりとなります</strong>（${result.plan}タイプ相当）`
+                : `<strong>あなたの場合の目安は【${result.range}】前後です</strong>（${result.plan}タイプ相当）`;
+            resultEl.innerHTML = headline
+                + (result.note ? `<p style="margin-top:0.5rem;font-size:0.85em;">${result.note}</p>` : '')
+                + `<a href="#plan-types" class="plan-diagnostic__arrow">対応方針はこちら<span class="plan-diagnostic__arrow-icon" aria-hidden="true">▼</span></a>`;
+            resultEl.classList.add('is-visible');
+
+            const omakasePrice = document.getElementById('omakase-card-price');
+            if (omakasePrice) omakasePrice.textContent = amountText;
+
+            const planTypesSection = document.getElementById('plan-types');
+            if (planTypesSection) {
+                planTypesSection.classList.remove('is-hidden');
+                planTypesSection.querySelectorAll('.animate-on-scroll').forEach(el => el.classList.add('visible'));
+            }
+        }
+
+        // ===== Plan card modal (toC) =====
+        const planContent = {
+            guide: {
+                title: 'ガイドタイプ',
+                html: `
+                    <p>「自分で進めたいけれど、どこから始めればいいか分からない」という方のための、無料の伴走型サポートです。</p>
+                    <p><strong>ご利用方法：</strong>事前予約制のweb会議にて、ご状況をお伺いしながら進め方をご案内します。お電話やメールでの簡易なご質問ではなく、最高3度程度のやりとりを通じて理解を深めることができますs</p>
+                    <ul class="plan-card__list">
+                        <li>進め方の整理と手順のご案内</li>
+                        <li>必要書類や確認事項のアドバイスと解説</li>
+                        <li>ご自身で動くためのガイド</li>
+                    </ul>
+                    <p><strong>料金：無料</strong>（事前予約制のweb会議でのご案内が前提です）</p>
+                    <p>ご相談の中で「やはり難しい」「時間がない」と感じられた場合は、別途切り替が可能です。</p>
+                `
+            },
+            omakase: {
+                title: 'お任せタイプ',
+                html: `
+                    <p>相続手続きをすべてお任せいいただくタイプです。手続きの数や専門性に応じて金額が上下し、当事務所では、財産の種別や金額に応じて大きく金額が異なります。</p>
+                    <ul class="plan-card__list">
+                        <li><strong>ライト（35〜65万円）：</strong>不動産なし・相続税なしの方向け。戸籍収集・財産調査・遺産分割協議書作成など、基本となる手続きを一括対応します。</li>
+                        <li><strong>標準（50〜80万円）：</strong>不動産ありの方向け。ライトの内容に加え、不動産の名義変更登記（司法書士が対応）が含まれます。</li>
+                        <li><strong>フル（100〜150万円）：</strong>相続税が発生する方向け。標準の内容に加え、相続税申告（税理士が対応）が含まれます。150万円を超える複雑なケースもございます。</li>
+                    </ul>
+                    <p>詳しい料金は初回相談後の調査を経て詳しいお見積りをご提示いたします。</p>
+                `
+            },
+            custom: {
+                title: 'オーダーメイドタイプ',
+                html: `
+                    <p>「任せられるところだけ任せたい」という方向けに、必要な作業だけを個別にお引き受けする対応です。下記の中から、ご希望の作業をお選びいただけます（一部抜粋）。</p>
+                    <ul class="plan-card__list">
+                        <li>役所への各種届出サポート</li>
+                        <li>戸籍収集・相続関係説明図の作成</li>
+                        <li>法定相続情報一覧図の作成</li>
+                        <li>財産調査・残高証明書の取得</li>
+                        <li>財産目録の作成</li>
+                        <li>遺産分割協議書の作成</li>
+                        <li>農地転用許可・届出手続き</li>
+                        <li>デジタル遺産（パソコン・スマートフォン）の調査</li>
+                        <li>その他、戸籍・財産・名義変更等に関する各種手続き</li>
+                    </ul>
+                    <p>料金は作業内容ごとの個別お見積りとなります。ご希望の作業をお伺いした上で、詳しい料金は初回相談後の調査を経てお見積り、実施事項ごご選択となります。</p>
+                `
+            }
+        };
+
+        document.querySelectorAll('.plan-card').forEach(card => {
+            const planKey = card.dataset.plan;
+            const content = planContent[planKey];
+            if (!content) return;
+
+            const open = () => openModalHTML(content.title, content.html);
+            card.addEventListener('click', open);
+            card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    open();
+                }
+            });
+        });
+
+        serviceModalClose?.addEventListener('click', closeServiceModal);
+        serviceModal?.addEventListener('click', (event) => {
+            if (event.target === serviceModal) {
+                closeServiceModal();
+            }
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeServiceModal();
+            }
+        });
+
+        // ===== Email link (obfuscated) =====
         function OnLinkClick() {
-            // エンティティ化された文字コード（例: "example@domain.com"）
             const encoded = [
                 "&#x6d;", "&#x61;", "&#x69;", "&#x6c;", "&#x74;", "&#x6f;", "&#x3a;", "&#x73;", "&#x75;", "&#x7a;", "&#x75;", "&#x6b;", "&#x69;", "&#x2d;", "&#x6b;", "&#x65;", "&#x6e;", "&#x6a;", "&#x69;", "&#x40;", "&#x67;", "&#x79;", "&#x6f;", "&#x75;", "&#x73;", "&#x65;", "&#x69;", "&#x64;", "&#x65;", "&#x73;", "&#x69;", "&#x67;", "&#x6e;", "&#x2e;", "&#x63;", "&#x6f;", "&#x6d;", "&#x3f;", "&#x73;", "&#x75;", "&#x62;", "&#x6a;", "&#x65;", "&#x63;", "&#x74;", "&#x3d;", "&#x76f8;", "&#x8ac7;", "&#x4f9d;", "&#x983c;", "&#x26;", "&#x62;", "&#x6f;", "&#x64;", "&#x79;", "&#x3d;", "&#x4f55;", "&#x3082;", "&#x5165;", "&#x529b;", "&#x305b;", "&#x305a;", "&#x306b;", "&#x3053;", "&#x306e;", "&#x307e;", "&#x307e;", "&#x30e1;", "&#x30fc;", "&#x30eb;", "&#x3092;", "&#x9001;", "&#x4fe1;", "&#x3057;", "&#x3066;", "&#x304f;", "&#x3060;", "&#x3055;", "&#x30e1;", "&#x30fc;", "&#x30eb;", "&#x3092;", "&#x9001;", "&#x4fe1;", "&#x3057;", "&#x3066;", "&#x304f;", "&#x3060;", "&#x3055;", "&#x3044;", "&#x3002;", "&#x53d7;", "&#x4fe1;", "&#x78ba;", "&#x8a8d;", "&#x5f8c;", "&#x6298;", "&#x308a;", "&#x8fd4;", "&#x3057;", "&#x306e;", "&#x30e1;", "&#x30fc;", "&#x30eb;", "&#x3092;", "&#x9001;", "&#x4fe1;", "&#x3044;", "&#x305f;", "&#x3057;", "&#x307e;", "&#x3059;", "&#x3002;"
-
             ];
-
-            // エンティティをHTMLとして解釈して文字列に変換
             const temp = document.createElement("textarea");
             temp.innerHTML = encoded.join("");
             const email = temp.value;
-
-            // メールリンクを設定
-            // const link = document.getElementById("emailLink");
-            // link.href = `mailto:${email}`;
-            // link.textContent = "メールで連絡";
             location.href = `${email}`;
         }
-
-
     </script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer
+        src="//js-na2.hs-scripts.com/246694838.js"></script>
+    <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>

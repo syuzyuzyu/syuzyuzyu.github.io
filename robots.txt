@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /?type=business
+
+Sitemap: https://gyouseidesign.com/sitemap.xml
