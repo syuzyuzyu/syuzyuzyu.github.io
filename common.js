@@ -234,33 +234,17 @@ const planContent = {
     },
     omakase: {
         title: 'お任せタイプ',
-        html: `
-            <p>相続手続きをすべてお任せいいただくタイプです。手続きの数や専門性に応じて金額が上下し、当事務所では、財産の種別や金額に応じて大きく金額が異なります。</p>
-            <ul class="plan-card__list">
-                <li><strong>ライト（35〜65万円）：</strong>不動産なし・相続税なしの方向け。戸籍収集・財産調査・遺産分割協議書作成など、基本となる手続きを一括対応します。</li>
-                <li><strong>標準（50〜80万円）：</strong>不動産ありの方向け。ライトの内容に加え、不動産の名義変更登記（司法書士が対応）が含まれます。</li>
-                <li><strong>フル（100〜150万円）：</strong>相続税が発生する方向け。標準の内容に加え、相続税申告（税理士が対応）が含まれます。150万円を超える複雑なケースもございます。</li>
-            </ul>
-            <p>詳しい料金は初回相談後の調査を経て詳しいお見積りをご提示いたします。</p>
-        `
+        // このプランの詳細文はHTML側の #omakase-detail-content（is-hidden）に静的に置いてあり、
+        // クリック時にそこから読み出す。クリック時にJSがinnerHTMLを新規生成する方式にすると、
+        // ページ読み込み時点のDOMに文言が存在せず検索エンジンに読まれないため、
+        // 「なぜこの金額か」等の訴求文はDOM上の静的ソースを持たせている（docs/Phase1/03参照）。
+        sourceId: 'omakase-detail-content'
     },
     custom: {
         title: 'オーダーメイドタイプ',
-        html: `
-            <p>「任せられるところだけ任せたい」という方向けに、必要な作業だけを個別にお引き受けする対応です。下記の中から、ご希望の作業をお選びいただけます（一部抜粋）。</p>
-            <ul class="plan-card__list">
-                <li>役所への各種届出サポート</li>
-                <li>戸籍収集・相続関係説明図の作成</li>
-                <li>法定相続情報一覧図の作成</li>
-                <li>財産調査・残高証明書の取得</li>
-                <li>財産目録の作成</li>
-                <li>遺産分割協議書の作成</li>
-                <li>農地転用許可・届出手続き</li>
-                <li>デジタル遺産（パソコン・スマートフォン）の調査</li>
-                <li>その他、戸籍・財産・名義変更等に関する各種手続き</li>
-            </ul>
-            <p>料金は作業内容ごとの個別お見積りとなります。ご希望の作業をお伺いした上で、詳しい料金は初回相談後の調査を経てお見積り、実施事項ごご選択となります。</p>
-        `
+        // omakaseと同様、文言はHTML側の #custom-detail-content（is-hidden）に静的に置き、
+        // クリック時にそこから読み出す（docs/Phase1/03参照）。
+        sourceId: 'custom-detail-content'
     }
 };
 
@@ -269,7 +253,12 @@ document.querySelectorAll('.plan-card').forEach(card => {
     const content = planContent[planKey];
     if (!content) return;
 
-    const open = () => openModalHTML(content.title, content.html);
+    const open = () => {
+        const html = content.sourceId
+            ? (document.getElementById(content.sourceId)?.innerHTML || '')
+            : content.html;
+        openModalHTML(content.title, html);
+    };
     card.addEventListener('click', open);
     card.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
