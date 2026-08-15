@@ -471,6 +471,22 @@ body {
     line-height: 1.7;
 }
 
+.concerns-diagnostic-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.concerns-diagnostic-link a {
+    color: var(--main-color-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.concerns-diagnostic-link a:hover {
+    color: var(--main-color);
+}
+
 .concerns-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1184,7 +1200,8 @@ body.modal-open {
     opacity: 0.9;
 }
 
-.plan-diagnostic {
+.plan-diagnostic,
+.affinity-diagnostic__box {
     max-width: 720px;
     margin: 2rem auto 0;
     padding: 1.5rem;
@@ -1195,7 +1212,8 @@ body.modal-open {
     text-align: left;
 }
 
-.plan-diagnostic__heading {
+.plan-diagnostic__heading,
+.affinity-diagnostic__heading {
     font-weight: bold;
     font-size: 1.1rem;
     color: var(--main-color-dark);
@@ -1203,11 +1221,13 @@ body.modal-open {
     text-align: center;
 }
 
-.plan-diagnostic__q {
+.plan-diagnostic__q,
+.affinity-diagnostic__q {
     margin-bottom: 1.25rem;
 }
 
-.plan-diagnostic__q-label {
+.plan-diagnostic__q-label,
+.affinity-diagnostic__q-label {
     display: block;
     font-weight: bold;
     color: var(--text-color);
@@ -1215,13 +1235,15 @@ body.modal-open {
     font-size: 0.95rem;
 }
 
-.plan-diagnostic__options {
+.plan-diagnostic__options,
+.affinity-diagnostic__options {
     display: flex;
     gap: 0.6rem;
     flex-wrap: wrap;
 }
 
-.plan-diagnostic__option {
+.plan-diagnostic__option,
+.affinity-diagnostic__option {
     padding: 0.5rem 1.2rem;
     border-radius: 999px;
     border: 1px solid var(--main-color);
@@ -1232,18 +1254,21 @@ body.modal-open {
     transition: all 0.2s ease;
 }
 
-.plan-diagnostic__option.is-selected {
+.plan-diagnostic__option.is-selected,
+.affinity-diagnostic__option.is-selected {
     background: var(--main-color);
     color: var(--text-color);
     font-weight: bold;
 }
 
-.plan-diagnostic__submit {
+.plan-diagnostic__submit,
+.affinity-diagnostic__submit {
     width: 100%;
     margin-top: 0.5rem;
 }
 
-.plan-diagnostic__result {
+.plan-diagnostic__result,
+.affinity-diagnostic__result {
     display: none;
     margin-top: 1.25rem;
     padding: 1.25rem;
@@ -1254,8 +1279,73 @@ body.modal-open {
     line-height: 1.7;
 }
 
-.plan-diagnostic__result.is-visible {
+.plan-diagnostic__result.is-visible,
+.affinity-diagnostic__result.is-visible {
     display: block;
+}
+
+.affinity-diagnostic__result {
+    border-left: none;
+}
+
+.affinity-diagnostic__checks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.affinity-diagnostic__checks label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.affinity-diagnostic__checks input[type="checkbox"] {
+    accent-color: var(--main-color-dark);
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+}
+
+.affinity-diagnostic__result .cta-button {
+    margin-top: 1rem;
+}
+
+.affinity-diagnostic__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.affinity-diagnostic__actions .cta-button {
+    margin-top: 0.5rem;
+}
+
+.affinity-diagnostic__office-block {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px dashed rgba(var(--main-color-dark-rgb), 0.3);
+}
+
+.affinity-diagnostic__office-block h4 {
+    color: var(--main-color-dark);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.affinity-diagnostic__note {
+    margin-top: 1.25rem;
+    font-size: 0.8em;
+    opacity: 0.75;
+    text-align: center;
 }
 
 .plan-diagnostic__arrow {
@@ -2229,6 +2319,80 @@ body.modal-open {
     line-height: 1.7;
 }
 
+/* toB Subsidy Feed - 現在募集中の主な制度（軽量・低メンテナンス、docs/Phase1/05参照） */
+.subsidy-feed {
+    padding: 5rem 2rem;
+    background: #fff;
+}
+
+.subsidy-feed__list {
+    list-style: none;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subsidy-feed__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--base-color);
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.subsidy-feed__name {
+    font-weight: bold;
+    color: var(--main-color-dark);
+    font-size: 1rem;
+    flex: 1 1 220px;
+}
+
+.subsidy-feed__support {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    flex: 1 1 100%;
+    min-width: 0;
+    opacity: 0.85;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subsidy-feed__source {
+    flex: 1 1 100%;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.subsidy-feed__link {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.subsidy-feed__link:hover {
+    text-decoration: underline;
+}
+
+.subsidy-feed__note {
+    max-width: 720px;
+    margin: 1.5rem auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.75;
+    line-height: 1.7;
+}
+
 /* toB POINT - Alternating image/text */
 .tob-points {
     padding: 5rem 2rem;
@@ -2523,5 +2687,78 @@ body.modal-open {
 
     .tob-hero__subtitle {
         font-size: 0.9rem;
+    }
+}
+
+/* ===== /soudan/ 相談先ガイドページ ===== */
+/* このページにはフルスクリーンのヒーロー画像がなく、他ページ共通の
+   「scrollY>80でヘッダーがフェードイン」という挙動だと読み込み直後は
+   ロゴ・ナビが一切見えなくなるため、常時表示に固定する */
+body.soudan-page .header {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.soudan-hero {
+    padding: 7rem 2rem 3rem;
+    text-align: center;
+    background: var(--base-color);
+}
+
+.soudan-hero h1 {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1.25rem;
+}
+
+.soudan-hero .section-subtitle {
+    margin-bottom: 0;
+}
+
+.soudan-hero .cta-button {
+    margin-top: 1.75rem;
+}
+
+.soudan-roles {
+    padding: 3rem 2rem;
+}
+
+.soudan-role-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.75rem;
+}
+
+.soudan-role-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+}
+
+.soudan-role-card__title {
+    color: var(--main-color-dark);
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+}
+
+.soudan-role-card p {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.soudan-role-card p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .soudan-hero h1 {
+        font-size: 1.3rem;
     }
 }
