@@ -253,7 +253,10 @@ body {
     margin-bottom: 2rem;
     color: var(--text-color);
 }
-
+.business-title{
+    font-size: 0.8em;
+    font-weight: lighter;
+}
 .cta-button {
     background: var(--accent-color);
     color: white !important;
