@@ -649,3 +649,52 @@ function OnLinkClick() {
 
     render();
 })();
+
+// ===== toC「相続でやることガイド」（/guide/）: 専用利用規約モーダル =====
+// 初回訪問時に自動表示し、「同意して進む」ボタン以外（×・背景クリック・Escapeキー）では
+// 閉じられない。同意するとCookie（10ヶ月）を保存し、以降の訪問では自動表示しない。
+// ボタン下の注記リンクから、同意後もいつでも読み返せる。
+(function () {
+    const termsModal = document.getElementById('guide-terms-modal');
+    if (!termsModal) return;
+
+    const COOKIE_NAME = 'guide_terms_agreed';
+
+    function getCookie(name) {
+        return document.cookie
+            .split('; ')
+            .find(row => row.startsWith(name + '='))
+            ?.split('=')[1];
+    }
+
+    function setCookie(name, value, months) {
+        const d = new Date();
+        d.setMonth(d.getMonth() + months);
+        document.cookie = `${name}=${value}; expires=${d.toUTCString()}; path=/; SameSite=Lax`;
+    }
+
+    function openTermsModal() {
+        termsModal.classList.add('is-open');
+        termsModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+    }
+
+    function closeTermsModal() {
+        termsModal.classList.remove('is-open');
+        termsModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+    }
+
+    if (getCookie(COOKIE_NAME) !== '1') {
+        openTermsModal();
+    }
+
+    document.getElementById('guide-terms-agree')?.addEventListener('click', () => {
+        setCookie(COOKIE_NAME, '1', 10);
+        closeTermsModal();
+    });
+
+    document.getElementById('guide-terms-reopen')?.addEventListener('click', () => {
+        openTermsModal();
+    });
+})();
