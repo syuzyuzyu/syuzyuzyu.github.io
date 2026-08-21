@@ -222,13 +222,14 @@ const planContent = {
         title: 'ガイドタイプ',
         html: `
             <p>「自分で進めたいけれど、どこから始めればいいか分からない」という方のための、無料の伴走型サポートです。</p>
-            <p><strong>ご利用方法：</strong>事前予約制のweb会議にて、ご状況をお伺いしながら進め方をご案内します。お電話やメールでの簡易なご質問ではなく、最高3度程度のやりとりを通じて理解を深めることができますs</p>
+            <p><strong>ご利用方法：</strong>専用の手順webページを確認しながらご自身で作業を進めていただきます。不明点等がある場合予約制のweb会議にて、不明点を相談することが可能です。最高3回のやりとりを通じて理解を深めることができます。</p>
             <ul class="plan-card__list">
                 <li>進め方の整理と手順のご案内</li>
                 <li>必要書類や確認事項のアドバイスと解説</li>
                 <li>ご自身で動くためのガイド</li>
+                <li>期間は最大10ヶ月</li>
             </ul>
-            <p><strong>料金：無料</strong>（事前予約制のweb会議でのご案内が前提です）</p>
+            <p><strong>料金：無料</strong>（手順ページでの実施、最大3回事前予約制のweb会議でのご案内が前提です）</p>
             <p>ご相談の中で「やはり難しい」「時間がない」と感じられた場合は、別途切り替が可能です。</p>
         `
     },
@@ -265,6 +266,30 @@ document.querySelectorAll('.plan-card').forEach(card => {
             event.preventDefault();
             open();
         }
+    });
+});
+
+// ===== toC「相続でやることガイド」（/guide/）: 用語解説モーダル =====
+// プラン詳細モーダル（omakase/custom）と同じ仕組みで、文言はHTML側の #glossary-* （is-hidden）に
+// 静的に置いておき、クリック時にそこから読み出す（検索エンジンにも読める状態を保つため）。
+const glossaryTitles = {
+    souzokunin: '相続人調査とは',
+    koseki: '戸籍収集とは',
+    kennin: '検認とは',
+    houki: '相続放棄・限定承認とは',
+    zaisan: '相続財産の把握とは',
+    bunkatsu: '遺産分割協議とは',
+    touki: '相続登記（不動産の名義変更）とは'
+};
+
+document.querySelectorAll('[data-glossary]').forEach(btn => {
+    const key = btn.dataset.glossary;
+    const title = glossaryTitles[key];
+    if (!title) return;
+
+    btn.addEventListener('click', () => {
+        const html = document.getElementById(`glossary-${key}`)?.innerHTML || '';
+        openModalHTML(title, html);
     });
 });
 
@@ -483,4 +508,144 @@ function OnLinkClick() {
             // 取得に失敗した場合は、HTMLに静的記述された既定の制度一覧（SEO用フォールバック）をそのまま表示する
             console.warn('補助金フィードの動的取得に失敗したため、既定の内容を表示しています。', err);
         });
+})();
+
+// ===== toC「相続でやることガイド」（/guide/）: 設問に応じたチェックリストの出し分け =====
+// 各フェーズの設問（ボタン式・単一選択／チェックボックス式・複数選択可）が、
+// data-guide-show / data-guide-hide に指定したidの要素（チェックリスト項目や結果ボックス）の
+// 表示・非表示を切り替える汎用の仕組み。ページ側は要素にidを振り、設問側に属性を指定するだけでよい。
+(function () {
+    const root = document.getElementById('guide-flow');
+    if (!root) return;
+
+    function applyToggle(idsAttr, hide) {
+        if (!idsAttr) return;
+        idsAttr.split(',').map(s => s.trim()).filter(Boolean).forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.classList.toggle('is-hidden', hide);
+        });
+    }
+
+    // ボタン式の設問（グループ内は単一選択。はい／いいえ／わからない、3択等に対応）
+    root.querySelectorAll('[data-guide-option]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const group = btn.dataset.guideGroup;
+            if (group) {
+                root.querySelectorAll(`[data-guide-option][data-guide-group="${group}"]`).forEach(b => {
+                    b.classList.remove('is-selected');
+                });
+            }
+            btn.classList.add('is-selected');
+            applyToggle(btn.dataset.guideShow, false);
+            applyToggle(btn.dataset.guideHide, true);
+        });
+    });
+
+    // チェックボックス式の設問（複数選択可。1つのチェックボックスが1つの項目の表示に対応する場合）
+    root.querySelectorAll('[data-guide-check]').forEach(chk => {
+        chk.addEventListener('change', () => {
+            applyToggle(chk.dataset.guideShow, !chk.checked);
+        });
+    });
+
+    // フェーズ3：準確定申告の要否（複数のチェックボックスのいずれか1つでも該当すれば表示、という
+    // OR判定が必要なため、1:1で表示を切り替える上記の汎用処理とは別に個別実装する）
+    const p3Checks = root.querySelectorAll('[data-guide-check-any="p3"]');
+    const p3Result = document.getElementById('p3-result');
+    if (p3Checks.length && p3Result) {
+        const updateP3 = () => {
+            const anyChecked = Array.from(p3Checks).some(c => c.checked);
+            p3Result.classList.toggle('is-hidden', !anyChecked);
+        };
+        p3Checks.forEach(chk => chk.addEventListener('change', updateP3));
+    }
+
+    // フェーズ5：法定相続人の数から基礎控除額の目安を計算する（遺産総額は入力させず、
+    // 計算後に「超えそうか」を3択で尋ねる形にすることで入力の手間を減らしている）
+    const taxBtn = document.getElementById('guide-tax-submit');
+    if (taxBtn) {
+        taxBtn.addEventListener('click', () => {
+            const heirsInput = document.getElementById('guide-tax-heirs');
+            const resultEl = document.getElementById('guide-tax-result');
+            const estateQuestion = document.getElementById('p5-estate-question');
+            const heirs = parseInt(heirsInput.value, 10);
+
+            if (!heirs || heirs < 1) {
+                resultEl.innerHTML = '<p>法定相続人の数を入力してください。</p>';
+                resultEl.classList.add('is-visible');
+                estateQuestion?.classList.add('is-hidden');
+                return;
+            }
+
+            const threshold = 3000 + 600 * heirs;
+            resultEl.innerHTML = `<p>基礎控除額の目安：<strong>${threshold.toLocaleString()}万円</strong>（3,000万円＋600万円×${heirs}人）</p>`;
+            resultEl.classList.add('is-visible');
+            estateQuestion?.classList.remove('is-hidden');
+        });
+    }
+})();
+
+// ===== toC「相続でやることガイド」（/guide/）: フェーズウィザードのページ送り =====
+// 5つのフェーズを1つずつ表示し、「次のフェーズへ」「前のフェーズへ」でページ送りする。
+(function () {
+    const wizard = document.getElementById('phase-wizard');
+    if (!wizard) return;
+
+    const cards = Array.from(wizard.querySelectorAll('.phase-card[data-phase]'));
+    const total = cards.length;
+    const stepLabel = document.getElementById('phase-wizard-step');
+    const barFill = document.getElementById('phase-wizard-bar-fill');
+    const prevBtn = document.getElementById('phase-prev');
+    const nextBtn = document.getElementById('phase-next');
+    const doneNote = document.getElementById('phase-wizard-done');
+    let current = 1;
+
+    function render() {
+        cards.forEach(card => {
+            card.classList.toggle('is-hidden', Number(card.dataset.phase) !== current);
+        });
+        if (stepLabel) stepLabel.textContent = `フェーズ ${current} / ${total}`;
+        if (barFill) barFill.style.width = (current / total * 100) + '%';
+        if (prevBtn) prevBtn.disabled = current === 1;
+        if (nextBtn) nextBtn.classList.toggle('is-hidden', current === total);
+        if (doneNote) doneNote.classList.toggle('is-hidden', current !== total);
+    }
+
+    prevBtn?.addEventListener('click', () => {
+        if (current > 1) {
+            current -= 1;
+            render();
+            wizard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+
+    nextBtn?.addEventListener('click', () => {
+        if (current < total) {
+            current += 1;
+            render();
+            wizard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+
+    // 「相続手続きの全体像」の各フェーズをクリック／Enterキーで押下すると、
+    // そのフェーズの質問へ直接移動する
+    document.querySelectorAll('.phase-overview [data-goto-phase]').forEach(step => {
+        const goTo = () => {
+            const target = Number(step.dataset.gotoPhase);
+            if (target >= 1 && target <= total) {
+                current = target;
+                render();
+                wizard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        };
+        step.addEventListener('click', goTo);
+        step.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                goTo();
+            }
+        });
+    });
+
+    render();
 })();
