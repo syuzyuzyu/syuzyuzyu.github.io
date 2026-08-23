@@ -650,6 +650,56 @@ function OnLinkClick() {
     render();
 })();
 
+// ===== toC「相続でやることガイド」（/guide/）: 「必要な手続き」チェックリストの保存 =====
+// 各フェーズの「必要な手続き」（.phase-todo-list内のチェックボックス）のチェック状態を、
+// { id: true, ... } 形式のJSONとしてlocalStorageに保存する。チェックしたidのみを保持し、
+// 未チェックのidは持たない（保存データを最小限にするため）。ページ再訪問時に復元する。
+(function () {
+    const todoLists = document.querySelectorAll('.phase-todo-list');
+    if (!todoLists.length) return;
+
+    const STORAGE_KEY = 'guide_checklist_state';
+
+    function loadState() {
+        try {
+            return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+        } catch (e) {
+            return {};
+        }
+    }
+
+    function saveState(state) {
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        } catch (e) {
+            // プライベートブラウジング等でlocalStorageが使用できない場合は何もしない
+        }
+    }
+
+    const initialState = loadState();
+
+    todoLists.forEach(list => {
+        list.querySelectorAll('label.phase-item[id]').forEach(label => {
+            const checkbox = label.querySelector('input[type="checkbox"]');
+            if (!checkbox) return;
+
+            if (initialState[label.id]) {
+                checkbox.checked = true;
+            }
+
+            checkbox.addEventListener('change', () => {
+                const state = loadState();
+                if (checkbox.checked) {
+                    state[label.id] = true;
+                } else {
+                    delete state[label.id];
+                }
+                saveState(state);
+            });
+        });
+    });
+})();
+
 // ===== toC「相続でやることガイド」（/guide/）: 専用利用規約モーダル =====
 // 初回訪問時に自動表示し、「同意して進む」ボタン以外（×・背景クリック・Escapeキー）では
 // 閉じられない。同意するとCookie（10ヶ月）を保存し、以降の訪問では自動表示しない。

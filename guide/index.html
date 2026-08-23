@@ -301,8 +301,8 @@
 
                     <p class="phase-card__block-title phase-card__block-title--todo">✓ 必要な手続き</p>
                     <div class="affinity-diagnostic__checks phase-todo-list">
-                        <label class="phase-item"><input type="checkbox"> 死亡届の提出（亡くなったことを知った日から7日以内・市区町村役場）</label>
-                        <label class="phase-item"><input type="checkbox"> 死体火葬埋葬許可申請（7日以内・死亡届と同時に手続き可能です）</label>
+                        <label class="phase-item" id="p1-item-death"><input type="checkbox"> 死亡届の提出（亡くなったことを知った日から7日以内・市区町村役場）</label>
+                        <label class="phase-item" id="p1-item-cremation"><input type="checkbox"> 死体火葬埋葬許可申請（7日以内・死亡届と同時に手続き可能です）</label>
                         <label class="phase-item is-hidden" id="p1-item-setai"><input type="checkbox">
                             世帯主変更届（14日以内・市区町村役場）</label>
                         <label class="phase-item is-hidden" id="p1-item-work-yes-1"><input type="checkbox">
@@ -381,10 +381,10 @@
 
                     <p class="phase-card__block-title phase-card__block-title--todo">✓ 必要な手続き</p>
                     <div class="affinity-diagnostic__checks phase-todo-list">
-                        <label class="phase-item"><input type="checkbox"> 遺言書の有無を確認する</label>
-                        <label class="phase-item"><input type="checkbox">
+                        <label class="phase-item" id="p2-item-will"><input type="checkbox"> 遺言書の有無を確認する</label>
+                        <label class="phase-item" id="p2-item-heirs"><input type="checkbox">
                             相続人調査（亡くなった方の出生から死亡までの戸籍を収集）</label>
-                        <label class="phase-item"><input type="checkbox">
+                        <label class="phase-item" id="p2-item-assets"><input type="checkbox">
                             相続財産の把握（プラスの財産・マイナスの財産の両方を調査）</label>
                         <label class="phase-item is-hidden" id="p2-item-kennin"><input type="checkbox">
                             家庭裁判所での検認手続き（法務局の自筆証書遺言書保管制度を利用している場合は不要です）</label>
@@ -473,9 +473,9 @@
 
                     <p class="phase-card__block-title phase-card__block-title--todo">✓ 必要な手続き</p>
                     <div class="affinity-diagnostic__checks phase-todo-list">
-                        <label class="phase-item"><input type="checkbox">
+                        <label class="phase-item" id="p4-item-bunkatsu"><input type="checkbox">
                             遺産分割協議・遺産分割協議書の作成（遺言書がない場合。相続人全員の合意が必要です）</label>
-                        <label class="phase-item"><input type="checkbox"> 預貯金・証券口座の解約・名義変更（金融機関）</label>
+                        <label class="phase-item" id="p4-item-bank"><input type="checkbox"> 預貯金・証券口座の解約・名義変更（金融機関）</label>
                         <label class="phase-item is-hidden" id="p4-item-touki"><input type="checkbox">
                             不動産の名義変更登記（相続登記）。2024年4月から義務化され、相続を知った日から<strong>3年以内</strong>が期限です</label>
                         <label class="phase-item is-hidden" id="p4-item-car"><input type="checkbox">
